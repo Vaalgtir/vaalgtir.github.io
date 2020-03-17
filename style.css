@@ -10,11 +10,16 @@ body {
 	background-color: #D8D8D8;
 }
 
+.disclaimer {
+	text-align: center;
+	color: red;
+}
+
 h1, h2 {
 	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
 }
 
-.header_style {
+.header {
 	color : #FAFAFA;
 	background-color: #8258FA;
 	margin-top: 2vh;
@@ -23,7 +28,16 @@ h1, h2 {
 	box-shadow: 0px 0px 12px #555;
 }
 
-img {
+.header__image {
+	text-align: center;
+}
+
+.important {
+	background: #00FFFF;
+	color: black;
+}
+
+.header__image--border {
 	border-radius: 5px;
 }
 
@@ -32,27 +46,30 @@ img {
 	padding-bottom: 10vh;
 }
 
+.arguments__image {
+	color: black;
+	margin-top: 5vh;
+}
+
 footer {
 	text-align: center;
 	color: #FAFAFA;
 }
 
-.image_fond {
+.footer__background {
 	padding-bottom: 5vh;
+	background-image: url(image/city.jpg);
+	filter: brightness(0.8);
 }
 
-.titre_footer {
+.footer__titre {
 	margin-top: 5vh;
 }
 
-.footer-logo-right {
-	padding-top: auto;
-}
-
-.footer-logo-left {
+.footer__logo-left {
 	text-align: right;
 }
 
-.footer-text {
+.footer__contacte {
 	text-align: left;
 }
