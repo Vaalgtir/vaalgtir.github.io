@@ -1,0 +1,50 @@
+body {
+	background-color: #D8D8D8;
+}
+
+h1, h2 {
+	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+}
+
+.header_style {
+	color : #FAFAFA;
+	background-color: #8258FA;
+	margin-top: 2vh;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+	box-shadow: 0px 0px 12px #555;
+}
+
+img {
+	border-radius: 5px;
+}
+
+.arguments {
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+}
+
+footer {
+	text-align: center;
+	color: #FAFAFA;
+}
+
+.image_fond {
+	padding-bottom: 5vh;
+}
+
+.titre_footer {
+	margin-top: 5vh;
+}
+
+.footer-logo-right {
+	padding-top: auto;
+}
+
+.footer-logo-left {
+	text-align: right;
+}
+
+.footer-text {
+	text-align: left;
+}
