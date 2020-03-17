@@ -9,11 +9,45 @@
             <div class="row">
                 <div class="col-lg-3 Biography">
                     <img src="image/pdp.jpg" alt="Photo de Profil" class="img-fluid Biography__pdp">
+                    <div class="Biography__button" id="Biography__button--contact">
+                        CONTACT
+                    </div>
+                    <div class="Biography__contenu">
+                        <p>
+                            <span class="Biography__contenu--title">Adresse</span></br>
+                            3 Chemin de la Molière
+                        </p>
+                        <p>
+                            <span class="Biography__contenu--title">Téléphone</span></br>
+                            06 ** ** ** **
+                        </p>
+                        <p>
+                            <span class="Biography__contenu--title">Email</span></br>
+                            dragnir19@gmail.com
+                        </p>
+                        <p>
+                            <span class="Biography__contenu--title">Site Web</span></br>
+                            www.name.com
+                        </p>
+                        <p>
+                            <span class="Biography__contenu--title">Twitter</span></br>
+                            ju_martin
+                        </p>
+                    </div>
                 </div>
                 <div class="col-lg-9 Detail">
 
                 </div>
             </div>
         </div>
+        <script>
+            document.querySelector(".Biography__button").onclick = function() {
+                if (window.getComputedStyle(document.querySelector('.Biography__contenu')).display=='none'){
+                    document.querySelector(".Biography__contenu").style.display="block";
+                } else {
+                    document.querySelector(".Biography__contenu").style.display="none";
+                }
+            }
+        </script>
     </body>
 </html>
