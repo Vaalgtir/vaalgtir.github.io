@@ -1,13 +1,13 @@
 $color-primary: #FFD740;
 $color-secondary: rgb(219, 172, 3);
 
-@media (min-width: 750px){
+@media screen and (max-width: 992px){
     html {
         font-size: 250%;
     }
 }
 
-@media (min-width: 1920px){
+@media screen and(min-width: 992px){
     html {
         font-size: 100%;
     }
@@ -24,11 +24,10 @@ $color-secondary: rgb(219, 172, 3);
         border: solid 0.25rem $color-secondary;
     }
     &__button {
-        padding: 0.7vh;
+        padding: 0.25rem;
         background-color: #424242;
         color: $color-primary;
         max-width: 100%;
-        // font-size: 2.6vh;
         font-size: 1.5rem;
         cursor: pointer;
         transition: background-color 400ms;
