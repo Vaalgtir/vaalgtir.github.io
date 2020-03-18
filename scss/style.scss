@@ -17,13 +17,35 @@ $color-secondary: rgb(219, 172, 3);
         max-width: 100%;
         font-size: 1.5rem;
         cursor: pointer;
+        transition: background-color 400ms;
+        &:hover {
+            background-color: #757575;
+            color: rgb(221, 186, 60);
+        }
     }
     &__contenu {
+        display: none;
         text-align: left;
         padding-left: 0.85rem;
-        padding-top: 0.85rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        &--appdm {
+            display: block;
+        }
+        &--loisir {
+            text-align: center;
+        }
         &--title {
             font-weight: bold;
         }
+        &--icone {
+            margin: 0.75rem;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
     }
+}
+
+.Detail {
+    
 }

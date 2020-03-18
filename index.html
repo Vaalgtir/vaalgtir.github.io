@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html>
     <header>
+		<meta charset="utf-8">
+
 		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
     </header>
     <body>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-3 Biography">
+                <div class="col-lg-2 Biography">
+
                     <img src="image/pdp.jpg" alt="Photo de Profil" class="img-fluid Biography__pdp">
+
                     <div class="Biography__button" id="Biography__button--contact">
-                        CONTACT
+                        CONTACT  <i class="fas fa-caret-down"></i>
                     </div>
-                    <div class="Biography__contenu">
+                    <div class="Biography__contenu" id="Biography__contenu--contact">
                         <p>
                             <span class="Biography__contenu--title">Adresse</span></br>
                             3 Chemin de la Molière
@@ -34,20 +39,70 @@
                             ju_martin
                         </p>
                     </div>
+
+                    <div class="Biography__button" id="Biography__button--appdm">
+                        A PROPOS DE MOI  <i class="fas fa-caret-down"></i>
+                    </div>
+                    <div class="Biography__contenu Biography__contenu--appdm" id="Biography__contenu--appdm">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Pellentesque massa ante, rhoncus et dapibus 
+                            at, convallis et dui. Nunc odio nisi, faucibus vel 
+                            accumsan dictum, rutrum at ex. Nam pellentesque,
+                            nulla id venenatis lobortis, velit nunc pellentesque
+                            velit, at vulputate leo neque vel massa. Etiam 
+                            vehicula est tellus, sed pretium massa tempus
+                        </p><p>
+                            vitae. Nulla bibendum sit amet orci ut sodales. 
+                            Sed fringilla ipsum quis porttitor laoreet. Curabitur 
+                            scelerisque metus odio, aliquam condimentum lorem 
+                            accumsan vitae. Phasellus at magna et ante 
+                            fermentum malesuada non sit amet sapien. 
+                            Duis eu libero tempus, ornare massa sed, 
+                            efficitur magna. Donec egestas finibus orci quis.
+                        </p>
+                    </div>
+
+                    <div class="Biography__button" id="Biography__button--loisir">
+                        LOISIRS  <i class="fas fa-caret-down"></i>
+                    </div>
+                    <div class="Biography__contenu Biography__contenu--loisir" id="Biography__contenu--loisir">
+                        <i class="fas fa-basketball-ball fa-3x Biography__contenu--icone"></i>
+                        <i class="fas fa-bicycle fa-3x Biography__contenu--icone"></i>
+                        <i class="fas fa-cocktail fa-3x Biography__contenu--icone"></i>
+                    </div>
+
                 </div>
-                <div class="col-lg-9 Detail">
+                <div class="col-lg-10 Detail">
 
                 </div>
             </div>
         </div>
         <script>
-            document.querySelector(".Biography__button").onclick = function() {
-                if (window.getComputedStyle(document.querySelector('.Biography__contenu')).display=='none'){
-                    document.querySelector(".Biography__contenu").style.display="block";
+            document.querySelector("#Biography__button--appdm").onclick = function() {
+                if (window.getComputedStyle(document.querySelector('#Biography__contenu--appdm')).display=='none'){
+                    document.querySelector("#Biography__contenu--appdm").style.display="block";
                 } else {
-                    document.querySelector(".Biography__contenu").style.display="none";
+                    document.querySelector("#Biography__contenu--appdm").style.display="none";
+                }
+            }
+
+            document.querySelector("#Biography__button--contact").onclick = function() {
+                if (window.getComputedStyle(document.querySelector('#Biography__contenu--contact')).display=='none'){
+                    document.querySelector("#Biography__contenu--contact").style.display="block";
+                } else {
+                    document.querySelector("#Biography__contenu--contact").style.display="none";
+                }
+            }
+            
+            document.querySelector("#Biography__button--loisir").onclick = function() {
+                if (window.getComputedStyle(document.querySelector('#Biography__contenu--loisir')).display=='none'){
+                    document.querySelector("#Biography__contenu--loisir").style.display="block";
+                } else {
+                    document.querySelector("#Biography__contenu--loisir").style.display="none";
                 }
             }
         </script>
+
     </body>
 </html>

@@ -15,14 +15,32 @@
   max-width: 100%;
   font-size: 1.5rem;
   cursor: pointer;
+  transition: background-color 400ms;
+}
+.Biography__button:hover {
+  background-color: #757575;
+  color: #ddba3c;
 }
 .Biography__contenu {
+  display: none;
   text-align: left;
   padding-left: 0.85rem;
-  padding-top: 0.85rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.Biography__contenu--appdm {
+  display: block;
+}
+.Biography__contenu--loisir {
+  text-align: center;
 }
 .Biography__contenu--title {
   font-weight: bold;
+}
+.Biography__contenu--icone {
+  margin: 0.75rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
