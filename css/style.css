@@ -139,6 +139,12 @@
   margin-left: 1rem;
   margin-right: 1.75rem;
 }
+.Detail__contenu__lgscreen--nomRecomm {
+  font-weight: 500;
+}
+.Detail__contenu__lgscreen--contactRecomm {
+  color: #616161;
+}
 .Detail__contenu__smscreen {
   margin-left: 4rem;
 }
@@ -165,6 +171,16 @@
   color: #dbac03;
   margin-left: 1rem;
   margin-right: 1.75rem;
+}
+.Detail__contenu__smscreen--nomRecomm {
+  font-weight: 500;
+}
+.Detail__contenu__smscreen--contactRecomm {
+  color: #616161;
+}
+.Detail__contenu__smscreen--Recomm {
+  margin-bottom: 2rem;
+  margin-left: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -139,6 +139,12 @@ $color-secondary-text: #616161;
             margin-left: 1rem;
             margin-right: 1.75rem;
         }
+        &--nomRecomm {
+            font-weight: 500;
+        }
+        &--contactRecomm {
+            color: $color-secondary-text;
+        }
     }
     &__contenu__smscreen{
         margin-left: 4rem;
@@ -165,6 +171,16 @@ $color-secondary-text: #616161;
             color: $color-secondary;
             margin-left: 1rem;
             margin-right: 1.75rem;
+        }
+        &--nomRecomm {
+            font-weight: 500;
+        }
+        &--contactRecomm {
+            color: $color-secondary-text;
+        }
+        &--Recomm {
+            margin-bottom: 2rem;
+            margin-left: 1rem;
         }
     }
 }
