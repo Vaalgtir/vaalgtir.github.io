@@ -3,11 +3,11 @@
     font-size: 250%;
   }
 
-  .Biography__presentaion {
+  .Biography__presentaion, .Detail__contenu__smscreen {
     display: block;
   }
 
-  .Detail__presentaion {
+  .Detail__presentaion, .Detail__contenu__lgscreen {
     display: none;
   }
 }
@@ -16,11 +16,11 @@
     font-size: 100%;
   }
 
-  .Biography__presentaion {
+  .Biography__presentaion, .Detail__contenu__smscreen {
     display: none;
   }
 
-  .Detail__presentaion {
+  .Detail__presentaion, .Detail__contenu__lgscreen {
     display: block;
   }
 }
@@ -112,10 +112,10 @@
 .Detail__presentaion--underline {
   border-bottom: 2px solid #FFD740;
 }
-.Detail__contenu {
+.Detail__contenu__lgscreen {
   margin-left: 4rem;
 }
-.Detail__contenu--titre {
+.Detail__contenu__lgscreen--titre {
   width: 90%;
   margin-top: 2.5rem;
   padding-left: 1rem;
@@ -126,14 +126,41 @@
   color: #616161;
   border-bottom: 1px solid #FFD740;
 }
-.Detail__contenu--titre--icone {
+.Detail__contenu__lgscreen--titre--icone {
   color: #FFD740;
   padding-right: 2rem;
 }
-.Detail__contenu--ligne {
+.Detail__contenu__lgscreen--ligne {
   margin-top: 2rem;
 }
-.Detail__contenu--dot {
+.Detail__contenu__lgscreen--dot {
+  text-align: right;
+  color: #dbac03;
+  margin-left: 1rem;
+  margin-right: 1.75rem;
+}
+.Detail__contenu__smscreen {
+  margin-left: 4rem;
+}
+.Detail__contenu__smscreen--titre {
+  width: 90%;
+  margin-top: 2.5rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: inline-block;
+  color: #616161;
+  border-bottom: 2px solid #FFD740;
+}
+.Detail__contenu__smscreen--titre--icone {
+  color: #FFD740;
+  padding-right: 2rem;
+}
+.Detail__contenu__smscreen--ligne {
+  margin-top: 2rem;
+}
+.Detail__contenu__smscreen--dot {
   text-align: right;
   color: #dbac03;
   margin-left: 1rem;

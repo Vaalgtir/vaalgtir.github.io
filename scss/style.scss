@@ -6,10 +6,10 @@ $color-secondary-text: #616161;
     html {
         font-size: 250%;
     }
-    .Biography__presentaion {
+    .Biography__presentaion,.Detail__contenu__smscreen {
         display: block;
     }
-    .Detail__presentaion {
+    .Detail__presentaion,.Detail__contenu__lgscreen {
         display: none;
     }
 }
@@ -18,10 +18,10 @@ $color-secondary-text: #616161;
     html {
         font-size: 100%;
     }
-    .Biography__presentaion {
+    .Biography__presentaion,.Detail__contenu__smscreen {
         display: none;
     }
-    .Detail__presentaion {
+    .Detail__presentaion,.Detail__contenu__lgscreen {
         display: block;
     }
 }
@@ -113,7 +113,7 @@ $color-secondary-text: #616161;
             border-bottom: 2px solid $color-primary;
         }
     }
-    &__contenu{
+    &__contenu__lgscreen{
         margin-left: 4rem;
         &--titre {
             width: 90%;
@@ -125,6 +125,33 @@ $color-secondary-text: #616161;
             display: inline-block;
             color: $color-secondary-text;
             border-bottom: 1px solid $color-primary;
+            &--icone {
+                color: $color-primary;
+                padding-right: 2rem;
+            }
+        }
+        &--ligne {
+            margin-top: 2rem;
+        }
+        &--dot {
+            text-align: right;
+            color: $color-secondary;
+            margin-left: 1rem;
+            margin-right: 1.75rem;
+        }
+    }
+    &__contenu__smscreen{
+        margin-left: 4rem;
+        &--titre {
+            width: 90%;
+            margin-top: 2.5rem;
+            padding-left: 1rem;
+            padding-bottom: 1rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: inline-block;
+            color: $color-secondary-text;
+            border-bottom: 2px solid $color-primary;
             &--icone {
                 color: $color-primary;
                 padding-right: 2rem;
