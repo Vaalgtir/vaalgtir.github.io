@@ -7,7 +7,7 @@
     display: block;
   }
 
-  .Detail__presentaion, .Detail__contenu__lgscreen {
+  #Detail__contenu__smscreen--formation, #Detail__contenu__smscreen--appdm, #Detail__contenu__smscreen--exp, #Detail__contenu__smscreen--loisirs, #Detail__contenu__smscreen--recomm, .Detail__presentaion, .Detail__contenu__lgscreen, #Biography__button--appdm, .Biography__contenu--appdm, #Biography__button--loisir, .Biography__contenu--loisir, .Biography__contenu {
     display: none;
   }
 }
@@ -16,11 +16,11 @@
     font-size: 100%;
   }
 
-  .Biography__presentaion, .Detail__contenu__smscreen {
+  #Detail__contenu__smscreen--formation, #Detail__contenu__smscreen--appdm, #Detail__contenu__smscreen--exp, #Detail__contenu__smscreen--loisirs, #Detail__contenu__smscreen--recomm, .Biography__presentaion, .Detail__contenu__smscreen, .Biography__contenu {
     display: none;
   }
 
-  .Detail__presentaion, .Detail__contenu__lgscreen {
+  .Detail__presentaion, .Detail__contenu__lgscreen, .Biography__contenu--appdm {
     display: block;
   }
 }
@@ -65,14 +65,10 @@
   color: #ddba3c;
 }
 .Biography__contenu {
-  display: none;
   text-align: left;
   padding-left: 0.85rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-.Biography__contenu--appdm {
-  display: block;
 }
 .Biography__contenu--loisir {
   text-align: center;
@@ -87,7 +83,7 @@
 }
 
 .Detail {
-  padding-top: 3rem;
+  padding-top: 0.5rem;
   padding-right: 2rem;
 }
 .Detail__presentaion {
@@ -122,7 +118,6 @@
   padding-bottom: 1rem;
   font-size: 1.5rem;
   font-weight: bold;
-  display: inline-block;
   color: #616161;
   border-bottom: 1px solid #FFD740;
 }
@@ -146,7 +141,7 @@
   color: #616161;
 }
 .Detail__contenu__smscreen {
-  margin-left: 4rem;
+  margin-left: 3rem;
 }
 .Detail__contenu__smscreen--titre {
   width: 90%;
@@ -155,16 +150,33 @@
   padding-bottom: 1rem;
   font-size: 1.5rem;
   font-weight: bold;
-  display: inline-block;
   color: #616161;
   border-bottom: 2px solid #FFD740;
+}
+.Detail__contenu__smscreen--titre:hover .Detail__contenu__smscreen--titre--arrow {
+  transition: color 400ms;
+  color: #616161;
+}
+.Detail__contenu__smscreen--titre--recomm {
+  text-align: center;
+}
+.Detail__contenu__smscreen--titre--recomm--arrow {
+  margin-left: -1.5rem;
+  color: #dbac03;
 }
 .Detail__contenu__smscreen--titre--icone {
   color: #FFD740;
   padding-right: 2rem;
 }
+.Detail__contenu__smscreen--titre--arrow {
+  color: #dbac03;
+  margin-left: 7rem;
+}
 .Detail__contenu__smscreen--ligne {
   margin-top: 2rem;
+}
+.Detail__contenu__smscreen--ligne--loisirs {
+  text-align: center;
 }
 .Detail__contenu__smscreen--dot {
   text-align: right;
@@ -181,6 +193,11 @@
 .Detail__contenu__smscreen--Recomm {
   margin-bottom: 2rem;
   margin-left: 1rem;
+}
+.Detail__contenu__smscreen--icone {
+  margin: 0.75rem;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

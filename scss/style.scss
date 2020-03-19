@@ -9,7 +9,7 @@ $color-secondary-text: #616161;
     .Biography__presentaion,.Detail__contenu__smscreen {
         display: block;
     }
-    .Detail__presentaion,.Detail__contenu__lgscreen {
+    #Detail__contenu__smscreen--formation,#Detail__contenu__smscreen--appdm,#Detail__contenu__smscreen--exp,#Detail__contenu__smscreen--loisirs,#Detail__contenu__smscreen--recomm,.Detail__presentaion,.Detail__contenu__lgscreen,#Biography__button--appdm,.Biography__contenu--appdm,#Biography__button--loisir,.Biography__contenu--loisir,.Biography__contenu {
         display: none;
     }
 }
@@ -18,10 +18,10 @@ $color-secondary-text: #616161;
     html {
         font-size: 100%;
     }
-    .Biography__presentaion,.Detail__contenu__smscreen {
+    #Detail__contenu__smscreen--formation,#Detail__contenu__smscreen--appdm,#Detail__contenu__smscreen--exp,#Detail__contenu__smscreen--loisirs,#Detail__contenu__smscreen--recomm,.Biography__presentaion,.Detail__contenu__smscreen,.Biography__contenu {
         display: none;
     }
-    .Detail__presentaion,.Detail__contenu__lgscreen {
+    .Detail__presentaion,.Detail__contenu__lgscreen,.Biography__contenu--appdm {
         display: block;
     }
 }
@@ -66,14 +66,10 @@ $color-secondary-text: #616161;
         }
     }
     &__contenu {
-        display: none;
         text-align: left;
         padding-left: 0.85rem;
         padding-top: 1rem;
         padding-bottom: 1rem;
-        &--appdm {
-            display: block;
-        }
         &--loisir {
             text-align: center;
         }
@@ -89,7 +85,7 @@ $color-secondary-text: #616161;
 }
 
 .Detail {
-    padding-top: 3rem;
+    padding-top: 0.5rem;
     padding-right: 2rem;
     &__presentaion{
         padding-left: 2.25rem;
@@ -122,7 +118,6 @@ $color-secondary-text: #616161;
             padding-bottom: 1rem;
             font-size: 1.5rem;
             font-weight: bold;
-            display: inline-block;
             color: $color-secondary-text;
             border-bottom: 1px solid $color-primary;
             &--icone {
@@ -147,7 +142,7 @@ $color-secondary-text: #616161;
         }
     }
     &__contenu__smscreen{
-        margin-left: 4rem;
+        margin-left: 3rem;
         &--titre {
             width: 90%;
             margin-top: 2.5rem;
@@ -155,16 +150,35 @@ $color-secondary-text: #616161;
             padding-bottom: 1rem;
             font-size: 1.5rem;
             font-weight: bold;
-            display: inline-block;
             color: $color-secondary-text;
             border-bottom: 2px solid $color-primary;
+            &:hover {
+                .Detail__contenu__smscreen--titre--arrow {
+                transition: color 400ms;
+                color: $color-secondary-text;
+                }
+            }
+            &--recomm {
+                text-align: center;
+                &--arrow {
+                    margin-left: -1.5rem;
+                    color: $color-secondary;
+                }
+            }
             &--icone {
                 color: $color-primary;
                 padding-right: 2rem;
             }
+            &--arrow {
+                color: $color-secondary;
+                margin-left: 7rem;
+            }
         }
         &--ligne {
             margin-top: 2rem;
+            &--loisirs {
+                text-align: center;
+            }
         }
         &--dot {
             text-align: right;
@@ -181,6 +195,11 @@ $color-secondary-text: #616161;
         &--Recomm {
             margin-bottom: 2rem;
             margin-left: 1rem;
+        }
+        &--icone {
+            margin: 0.75rem;
+            margin-top: 0.5rem;
+            margin-bottom: 2rem;
         }
     }
 }
