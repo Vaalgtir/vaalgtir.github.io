@@ -14,7 +14,10 @@
     display: block;
   }
 
-  #Detail__contenu__smscreen--formation, #Detail__contenu__smscreen--appdm, #Detail__contenu__smscreen--exp, #Detail__contenu__smscreen--loisirs, #Detail__contenu__smscreen--recomm, .Detail__presentaion, .Detail__contenu__lgscreen, #Biography__button--appdm, .Biography__contenu--appdm, #Biography__button--loisir, .Biography__contenu--loisir, .Biography__contenu {
+  #Detail__contenu__smscreen--formation, #Detail__contenu__smscreen--appdm, #Detail__contenu__smscreen--exp,
+#Detail__contenu__smscreen--loisirs, #Detail__contenu__smscreen--recomm, .Detail__presentaion,
+.Detail__contenu__lgscreen, #Biography__button--appdm, .Biography__contenu--appdm, #Biography__button--loisir,
+.Biography__contenu--loisir, .Biography__contenu {
     display: none;
   }
 }
@@ -30,11 +33,13 @@
     border: solid 0.25rem #dbac03;
   }
 
-  #Detail__contenu__smscreen--formation, #Detail__contenu__smscreen--appdm, #Detail__contenu__smscreen--exp, #Detail__contenu__smscreen--loisirs, #Detail__contenu__smscreen--recomm, .Biography__presentaion, .Detail__contenu__smscreen, .Biography__contenu {
+  #Detail__contenu__smscreen--formation, #Detail__contenu__smscreen--appdm, #Detail__contenu__smscreen--exp,
+#Detail__contenu__smscreen--loisirs, #Detail__contenu__smscreen--recomm, .Biography__presentaion,
+.Detail__contenu__smscreen {
     display: none;
   }
 
-  .Detail__presentaion, .Detail__contenu__lgscreen, .Biography__contenu--appdm {
+  .Detail__presentaion, .Detail__contenu__lgscreen, .Biography__contenu {
     display: block;
   }
 }
@@ -52,7 +57,7 @@
 .Biography__presentaion--nomprenom {
   font-size: 2rem;
 }
-.Biography__presentaion--nom {
+.Biography__presentaion--nomprenom span {
   color: #8D6E63;
   font-weight: bold;
 }
@@ -81,13 +86,13 @@
 .Biography__contenu--loisir {
   text-align: center;
 }
-.Biography__contenu--title {
-  font-weight: bold;
-}
-.Biography__contenu--icone {
+.Biography__contenu--loisir i {
   margin: 0.75rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
+}
+.Biography__contenu span {
+  font-weight: bold;
 }
 
 .Detail {
@@ -113,7 +118,7 @@
 .Detail__presentaion--sstitre {
   color: #616161;
 }
-.Detail__presentaion--underline {
+.Detail__presentaion--sstitre span {
   border-bottom: 2px solid #FFD740;
 }
 .Detail__contenu__lgscreen {
@@ -129,7 +134,7 @@
   color: #616161;
   border-bottom: 1px solid #FFD740;
 }
-.Detail__contenu__lgscreen--titre--icone {
+.Detail__contenu__lgscreen--titre i {
   color: #FFD740;
   padding-right: 2rem;
 }
@@ -172,7 +177,7 @@
   margin-left: -1.5rem;
   color: #dbac03;
 }
-.Detail__contenu__smscreen--titre--icone {
+.Detail__contenu__smscreen--titre i {
   color: #FFD740;
   padding-right: 2rem;
 }

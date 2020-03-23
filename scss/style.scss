@@ -15,7 +15,10 @@ $color-secondary-text: #616161;
     .Biography__presentaion,.Detail__contenu__smscreen {
         display: block;
     }
-    #Detail__contenu__smscreen--formation,#Detail__contenu__smscreen--appdm,#Detail__contenu__smscreen--exp,#Detail__contenu__smscreen--loisirs,#Detail__contenu__smscreen--recomm,.Detail__presentaion,.Detail__contenu__lgscreen,#Biography__button--appdm,.Biography__contenu--appdm,#Biography__button--loisir,.Biography__contenu--loisir,.Biography__contenu {
+    #Detail__contenu__smscreen--formation,#Detail__contenu__smscreen--appdm,#Detail__contenu__smscreen--exp,
+    #Detail__contenu__smscreen--loisirs,#Detail__contenu__smscreen--recomm,.Detail__presentaion,
+    .Detail__contenu__lgscreen,#Biography__button--appdm,.Biography__contenu--appdm,#Biography__button--loisir,
+    .Biography__contenu--loisir,.Biography__contenu {
         display: none;
     }
 }
@@ -30,10 +33,12 @@ $color-secondary-text: #616161;
         border-radius: 100rem;
         border: solid 0.25rem $color-secondary;
     }
-    #Detail__contenu__smscreen--formation,#Detail__contenu__smscreen--appdm,#Detail__contenu__smscreen--exp,#Detail__contenu__smscreen--loisirs,#Detail__contenu__smscreen--recomm,.Biography__presentaion,.Detail__contenu__smscreen,.Biography__contenu {
+    #Detail__contenu__smscreen--formation,#Detail__contenu__smscreen--appdm,#Detail__contenu__smscreen--exp,
+    #Detail__contenu__smscreen--loisirs,#Detail__contenu__smscreen--recomm,.Biography__presentaion,
+    .Detail__contenu__smscreen {
         display: none;
     }
-    .Detail__presentaion,.Detail__contenu__lgscreen,.Biography__contenu--appdm {
+    .Detail__presentaion,.Detail__contenu__lgscreen,.Biography__contenu {
         display: block;
     }
 }
@@ -49,10 +54,10 @@ $color-secondary-text: #616161;
         font-size: 1.2rem;
         &--nomprenom {
             font-size: 2rem;
-        }
-        &--nom {
-            color: #8D6E63;
-            font-weight: bold;
+            & span {
+                color: #8D6E63;
+                font-weight: bold;
+            }
         }
         &--underline {
             border-bottom: 1px solid #8D6E63;
@@ -78,14 +83,14 @@ $color-secondary-text: #616161;
         padding-bottom: 1rem;
         &--loisir {
             text-align: center;
+            & i {
+                margin: 0.75rem;
+                margin-top: 1rem;
+                margin-bottom: 2rem;
+            }
         }
-        &--title {
+        & span {
             font-weight: bold;
-        }
-        &--icone {
-            margin: 0.75rem;
-            margin-top: 1rem;
-            margin-bottom: 2rem;
         }
     }
 }
@@ -110,11 +115,12 @@ $color-secondary-text: #616161;
         }
         &--sstitre {
             color: $color-secondary-text;
-        }
-        &--underline {
-            border-bottom: 2px solid $color-primary;
+            & span {
+                border-bottom: 2px solid $color-primary;
+            }
         }
     }
+
     &__contenu__lgscreen{
         margin-left: 4rem;
         &--titre {
@@ -126,7 +132,7 @@ $color-secondary-text: #616161;
             font-weight: bold;
             color: $color-secondary-text;
             border-bottom: 1px solid $color-primary;
-            &--icone {
+            & i {
                 color: $color-primary;
                 padding-right: 2rem;
             }
@@ -147,6 +153,7 @@ $color-secondary-text: #616161;
             color: $color-secondary-text;
         }
     }
+
     &__contenu__smscreen{
         margin-left: 3rem;
         &--titre {
@@ -171,7 +178,7 @@ $color-secondary-text: #616161;
                     color: $color-secondary;
                 }
             }
-            &--icone {
+            & i {
                 color: $color-primary;
                 padding-right: 2rem;
             }
