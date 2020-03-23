@@ -2,6 +2,12 @@ $color-primary: #FFD740;
 $color-secondary: rgb(219, 172, 3);
 $color-secondary-text: #616161;
 
+.disclaimer {
+    position: absolute;
+    margin-left: 40%;
+    color : red;
+}
+
 @media screen and (max-width: 992px){
     html {
         font-size: 250%;
