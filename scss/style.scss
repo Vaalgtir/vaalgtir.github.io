@@ -228,10 +228,9 @@ $color-secondary-text: #616161;
         & .fa-chevron-down::before {
             display: block;
             transition: transform 400ms;
-            transform: rotate(-180deg);
         }
         &.is-active .fa-chevron-down::before {
-            transform: rotate(0deg);
+            transform: rotate(-180deg);
         }
     }
 }
