@@ -73,11 +73,17 @@ $color-secondary-text: #616161;
         max-width: 100%;
         font-size: 1.5rem;
         cursor: pointer;
-        transition: background-color 400ms;
+        & .fas {
+            transition: transform 500ms;
+            transform: rotate(-90deg);
+        }
         &:hover {
             background-color: #757575;
             color: rgb(221, 186, 60);
         }
+        &.is-active .fas{
+            transform: rotate(0deg);
+        } 
     }
     &__contenu {
         text-align: left;
@@ -216,6 +222,16 @@ $color-secondary-text: #616161;
             margin: 0.75rem;
             margin-top: 0.5rem;
             margin-bottom: 2rem;
+        }
+    }
+    &__button__smscreen {
+        & .fa-chevron-down::before {
+            display: block;
+            transition: transform 400ms;
+            transform: rotate(-180deg);
+        }
+        &.is-active .fa-chevron-down::before {
+            transform: rotate(0deg);
         }
     }
 }

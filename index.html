@@ -25,7 +25,7 @@
                         <span class="Biography__presentaion--underline">Dével</span>oppeur Web Freelance
                     </div>
 
-                    <div class="Biography__button">
+                    <div class="Biography__button is-active">
                         CONTACT  <i class="fas fa-caret-down"></i>
                     </div>
                     <div class="Biography__contenu">
@@ -51,7 +51,7 @@
                         </p>
                     </div>
 
-                    <div class="Biography__button Biography__button--lg">
+                    <div class="Biography__button Biography__button--lg is-active">
                         A PROPOS DE MOI  <i class="fas fa-caret-down"></i>
                     </div>
                     <div class="Biography__contenu">
@@ -74,7 +74,7 @@
                         </p>
                     </div>
 
-                    <div class="Biography__button Biography__button--lg">
+                    <div class="Biography__button Biography__button--lg is-active">
                         LOISIRS  <i class="fas fa-caret-down"></i>
                     </div>
                     <div class="Biography__contenu Biography__contenu--loisir">
@@ -354,13 +354,13 @@
         <script>
             $(document).ready(function() {
                 $(".Biography__button").click(function() {
-                    $(this).next(".Biography__contenu").slideToggle("ease-out");
+                    $(this).toggleClass("is-active").next(".Biography__contenu").slideToggle("ease-out");
                 });
             });
             
             $(document).ready(function() {
                 $(".Detail__button__smscreen").click(function() {
-                    $(this).next(".Detail__contenu__smscreen--anim").slideToggle("ease-out");
+                    $(this).toggleClass("is-active").next(".Detail__contenu__smscreen--anim").slideToggle("ease-out");
                 });
             });
         </script>
