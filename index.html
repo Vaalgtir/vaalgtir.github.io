@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
-    <header>
+    <head>
 		<meta charset="utf-8">
 
 		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
-    </header>
+        <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+        
+        <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    </head>
     <body>
         <div class="disclaimer"><p>Rien dans cette page ne reflète la réalité et toute correspondance avec une personne réelle est fortuite.</p></div>
         <div class="container-fluid">
@@ -23,10 +25,10 @@
                         <span class="Biography__presentaion--underline">Dével</span>oppeur Web Freelance
                     </div>
 
-                    <div class="Biography__button" id="Biography__button--contact">
+                    <div class="Biography__button">
                         CONTACT  <i class="fas fa-caret-down"></i>
                     </div>
-                    <div class="Biography__contenu" id="Biography__contenu--contact">
+                    <div class="Biography__contenu">
                         <p>
                             <span>Adresse</span></br>
                             3 Chemin de la Molière
@@ -49,10 +51,10 @@
                         </p>
                     </div>
 
-                    <div class="Biography__button" id="Biography__button--appdm">
+                    <div class="Biography__button Biography__button--lg">
                         A PROPOS DE MOI  <i class="fas fa-caret-down"></i>
                     </div>
-                    <div class="Biography__contenu Biography__contenu--appdm" id="Biography__contenu--appdm">
+                    <div class="Biography__contenu">
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. Pellentesque massa ante, rhoncus et dapibus 
@@ -72,10 +74,10 @@
                         </p>
                     </div>
 
-                    <div class="Biography__button" id="Biography__button--loisir">
+                    <div class="Biography__button Biography__button--lg">
                         LOISIRS  <i class="fas fa-caret-down"></i>
                     </div>
-                    <div class="Biography__contenu Biography__contenu--loisir" id="Biography__contenu--loisir">
+                    <div class="Biography__contenu Biography__contenu--loisir">
                         <i class="fas fa-basketball-ball fa-3x"></i>
                         <i class="fas fa-bicycle fa-3x"></i>
                         <i class="fas fa-cocktail fa-3x"></i>
@@ -215,11 +217,11 @@
 
                     <!-- block de contenu uniquement pour les écrans inférieur à 992px -->
                     <div class="Detail__contenu__smscreen">
-                        <div class="Detail__contenu__smscreen--titre" id="Detail__button__smscreen--appdm">
+                        <div class="Detail__contenu__smscreen--titre Detail__button__smscreen">
                             <i class="fas fa-drafting-compass"></i> ME CONNAITRE<br/>
                             <i class="fas fa-chevron-down Detail__contenu__smscreen--titre--arrow"></i>
                         </div>
-                        <div id="Detail__contenu__smscreen--appdm">
+                        <div class="Detail__contenu__smscreen--anim">
                             <div class="Detail__contenu__smscreen--ligne">
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -241,11 +243,11 @@
                             </div>
                         </div>
 
-                        <div class="Detail__contenu__smscreen--titre" id="Detail__button__smscreen--formation">
+                        <div class="Detail__contenu__smscreen--titre Detail__button__smscreen">
                             <i class="fas fa-drafting-compass"></i> FORMATION<br/>
                             <i class="fas fa-chevron-down Detail__contenu__smscreen--titre--arrow"></i>
                         </div>
-                        <div id="Detail__contenu__smscreen--formation">
+                        <div class="Detail__contenu__smscreen--anim">
                             <div class="Detail__contenu__smscreen--ligne">
                                 <h5>
                                     <span class="Detail__contenu__smscreen--dot">
@@ -273,11 +275,11 @@
                             </div>
                         </div>
                         
-                        <div class="Detail__contenu__smscreen--titre" id="Detail__button__smscreen--exp">
+                        <div class="Detail__contenu__smscreen--titre Detail__button__smscreen">
                             <i class="fas fa-briefcase"></i> EXPERIENCE PROFESSIONELLE<br/>
                             <i class="fas fa-chevron-down Detail__contenu__smscreen--titre--arrow"></i>
                         </div>
-                        <div id="Detail__contenu__smscreen--exp">
+                        <div class="Detail__contenu__smscreen--anim">
                             <div class="Detail__contenu__smscreen--ligne">
                                 <h5>
                                     <span class="Detail__contenu__smscreen--dot">
@@ -305,11 +307,11 @@
                             </div>
                         </div>
 
-                        <div class="Detail__contenu__smscreen--titre Detail__contenu__smscreen--titre--recomm" id="Detail__button__smscreen--recomm">
+                        <div class="Detail__contenu__smscreen--titre Detail__contenu__smscreen--titre--recomm Detail__button__smscreen">
                             <i class="fas fa-pencil-alt"></i> RECOMMANDATIONS<br/>
                             <i class="fas fa-chevron-down Detail__contenu__smscreen--titre--recomm--arrow"></i>
                         </div>
-                        <div id="Detail__contenu__smscreen--recomm">
+                        <div class="Detail__contenu__smscreen--anim">
                             <div class="container-fluid">
                                 <div class="Detail__contenu__smscreen--ligne">
                                     <div class="Detail__contenu__smscreen--Recomm">
@@ -334,11 +336,11 @@
                             </div>
                         </div>
 
-                        <div class="Detail__contenu__smscreen--titre" id="Detail__button__smscreen--loisirs">
+                        <div class="Detail__contenu__smscreen--titre Detail__button__smscreen">
                             <i class="fas fa-drafting-compass"></i> LOISIRS<br/>
                             <i class="fas fa-chevron-down Detail__contenu__smscreen--titre--arrow"></i>
                         </div>
-                        <div id="Detail__contenu__smscreen--loisirs">
+                        <div class="Detail__contenu__smscreen--anim">
                             <div class="Detail__contenu__smscreen--ligne Detail__contenu__smscreen--ligne--loisirs">
                             <i class="fas fa-basketball-ball fa-3x Detail__contenu__smscreen--icone"></i>
                             <i class="fas fa-bicycle fa-3x Detail__contenu__smscreen--icone"></i>
@@ -350,69 +352,17 @@
             </div>
         </div>
         <script>
-            document.querySelector("#Biography__button--appdm").onclick = function() {
-                if (window.getComputedStyle(document.querySelector('#Biography__contenu--appdm')).display=='none'){
-                    document.querySelector("#Biography__contenu--appdm").style.display="block";
-                } else {
-                    document.querySelector("#Biography__contenu--appdm").style.display="none";
-                }
-            }
-
-            document.querySelector("#Biography__button--contact").onclick = function() {
-                if (window.getComputedStyle(document.querySelector('#Biography__contenu--contact')).display=='none'){
-                    document.querySelector("#Biography__contenu--contact").style.display="block";
-                } else {
-                    document.querySelector("#Biography__contenu--contact").style.display="none";
-                }
-            }
+            $(document).ready(function() {
+                $(".Biography__button").click(function() {
+                    $(this).next(".Biography__contenu").slideToggle("ease-out");
+                });
+            });
             
-            document.querySelector("#Biography__button--loisir").onclick = function() {
-                if (window.getComputedStyle(document.querySelector('#Biography__contenu--loisir')).display=='none'){
-                    document.querySelector("#Biography__contenu--loisir").style.display="block";
-                } else {
-                    document.querySelector("#Biography__contenu--loisir").style.display="none";
-                }
-            }
-            
-            document.querySelector("#Detail__button__smscreen--appdm").onclick = function() {
-                if (window.getComputedStyle(document.querySelector('#Detail__contenu__smscreen--appdm')).display=='none'){
-                    document.querySelector("#Detail__contenu__smscreen--appdm").style.display="block";
-                } else {
-                    document.querySelector("#Detail__contenu__smscreen--appdm").style.display="none";
-                }
-            }
-            
-            document.querySelector("#Detail__button__smscreen--formation").onclick = function() {
-                if (window.getComputedStyle(document.querySelector('#Detail__contenu__smscreen--formation')).display=='none'){
-                    document.querySelector("#Detail__contenu__smscreen--formation").style.display="block";
-                } else {
-                    document.querySelector("#Detail__contenu__smscreen--formation").style.display="none";
-                }
-            }
-            
-            document.querySelector("#Detail__button__smscreen--exp").onclick = function() {
-                if (window.getComputedStyle(document.querySelector('#Detail__contenu__smscreen--exp')).display=='none'){
-                    document.querySelector("#Detail__contenu__smscreen--exp").style.display="block";
-                } else {
-                    document.querySelector("#Detail__contenu__smscreen--exp").style.display="none";
-                }
-            }
-            
-            document.querySelector("#Detail__button__smscreen--recomm").onclick = function() {
-                if (window.getComputedStyle(document.querySelector('#Detail__contenu__smscreen--recomm')).display=='none'){
-                    document.querySelector("#Detail__contenu__smscreen--recomm").style.display="block";
-                } else {
-                    document.querySelector("#Detail__contenu__smscreen--recomm").style.display="none";
-                }
-            }
-            
-            document.querySelector("#Detail__button__smscreen--loisirs").onclick = function() {
-                if (window.getComputedStyle(document.querySelector('#Detail__contenu__smscreen--loisirs')).display=='none'){
-                    document.querySelector("#Detail__contenu__smscreen--loisirs").style.display="block";
-                } else {
-                    document.querySelector("#Detail__contenu__smscreen--loisirs").style.display="none";
-                }
-            }
+            $(document).ready(function() {
+                $(".Detail__button__smscreen").click(function() {
+                    $(this).next(".Detail__contenu__smscreen--anim").slideToggle("ease-out");
+                });
+            });
         </script>
     </body>
 </html>
