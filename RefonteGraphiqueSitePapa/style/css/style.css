@@ -191,7 +191,7 @@ section .wrapperTestLink .testButton {
   margin: 1rem 0;
   display: grid;
 }
-.footer .containerLegal .wrapperLink a:last-child {
+.footer .containerLegal .wrapperLink a:first-child + a {
   grid-row: 2/3;
 }
 .footer .containerLegal .wrapperLink a {
@@ -204,6 +204,17 @@ section .wrapperTestLink .testButton {
 .footer .containerLegal .wrapperLink a:hover {
   text-decoration: none;
   color: #ffa100;
+}
+.footer .containerLegal .wrapperLink span {
+  display: flex;
+  align-items: center;
+  height: 2.5rem;
+  padding: 1rem 0.5rem;
+  border-bottom: solid 1px #BDBDBD;
+}
+.footer .containerLegal .wrapperLink span img {
+  max-height: 100%;
+  margin-right: 2rem;
 }
 .footer .containerNousContacter h1 {
   margin: 0 0 1rem 0.75rem;

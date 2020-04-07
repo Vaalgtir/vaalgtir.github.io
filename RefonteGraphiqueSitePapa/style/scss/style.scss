@@ -202,7 +202,7 @@ section {
         & .wrapperLink {
             margin: 1rem 0;
             display: grid;
-            & a:last-child {
+            & a:first-child+a {
                 grid-row: 2 / 3;
             }
             & a {
@@ -214,6 +214,17 @@ section {
                 &:hover {
                     text-decoration: none;
                     color: $orange-primary;
+                }
+            }
+            & span {
+                display: flex;
+                align-items: center;
+                height: 2.5rem;
+                padding: 1rem 0.5rem;
+                border-bottom: solid 1px #BDBDBD;
+                & img {
+                    max-height: 100%;
+                    margin-right: 2rem;
                 }
             }
         }
