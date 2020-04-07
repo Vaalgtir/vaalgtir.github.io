@@ -393,7 +393,7 @@ section .wrapperTestLink .testButton {
     display: grid;
   }
   .navbar .testButton {
-    margin: 2vh 1rem 0 0;
+    margin: 2vh 0.5rem 0 0;
   }
 
   header {

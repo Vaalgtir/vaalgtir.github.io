@@ -249,7 +249,7 @@ section {
 }
 
 
-// full and medium screen navbar
+// full screen navbar
 @media screen and (min-width:1200px) { 
     .navbar {
         grid-template-rows: 8.5vh;
@@ -419,7 +419,7 @@ section {
             display: grid;
         }
         & .testButton {
-            margin: 2vh 1rem 0 0;
+            margin: 2vh 0.5rem 0 0;
         }
     }
     
