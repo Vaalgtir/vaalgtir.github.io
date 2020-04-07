@@ -1,0 +1,19 @@
+{
+  "name": "projet-3",
+  "version": "1.0.0",
+  "description": "scss for menus",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./style/scss/style.scss:./style/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vaalgtir/Projet-3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vaalgtir/Projet-3/issues"
+  },
+  "homepage": "https://github.com/Vaalgtir/Projet-3#readme"
+}

@@ -1,0 +1,129 @@
+@keyframes waiting_dot {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+@media screen and (max-width: 992px) {
+  footer {
+    flex-direction: column;
+    align-content: space-between;
+    height: 6.5rem;
+  }
+  footer a {
+    padding: 0.75rem 1rem;
+  }
+
+  section .menus {
+    margin: 1rem 1rem;
+  }
+
+  section .prochainement {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  footer a {
+    margin: 1rem 1rem;
+    padding: 1rem 1rem;
+  }
+
+  section .menus {
+    margin: 2rem 25%;
+  }
+
+  section .prochainement {
+    font-size: 2.5rem;
+  }
+}
+body {
+  margin: 0;
+  padding: 0 0 8rem 0;
+}
+
+header {
+  margin: 0;
+  background-color: #579c87;
+  text-align: center;
+}
+header .header__logo {
+  width: 15rem;
+  margin: 1rem 0;
+}
+
+section {
+  text-align: center;
+}
+section .menus {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+section .menus a {
+  box-shadow: 1px 1px 12px #555;
+  overflow: hidden;
+}
+section .menus a img {
+  transition: all 400ms;
+}
+section .menus a img:hover {
+  transform: scale(1.5);
+  opacity: 0.25;
+}
+section .prochainement {
+  margin: 2rem 0rem;
+  padding: 0 1rem;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 2rem;
+  background-color: #579c87;
+  color: #fdcb46;
+}
+section .prochainement:hover > span.anime__dot {
+  display: inline-block;
+  animation: waiting_dot 600ms ease-in-out infinite alternate;
+}
+section .prochainement:hover > span.anime__dot--2 {
+  animation-delay: 200ms;
+}
+section .prochainement:hover > span.anime__dot--3 {
+  animation-delay: 400ms;
+}
+
+footer {
+  width: 100%;
+  background-color: #579c87;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+}
+footer a {
+  display: inline-block;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #fdcb46;
+  transition: color 400ms;
+}
+footer a:hover {
+  animation: wiggle 200ms 3 alternate;
+  text-decoration: none;
+  color: #F57F17;
+}
+
+/*# sourceMappingURL=style.css.map */

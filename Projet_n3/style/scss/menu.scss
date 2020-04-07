@@ -1,0 +1,111 @@
+$backgrnd-menu1: #fcdfdb;
+$backgrnd-menu2: #fff5fe;
+$backgrnd-menu3: #edefef;
+$backgrnd-menu4: #fdfffd;
+
+// big screen
+@media screen and (min-width: 1250px) {
+    section {
+        margin: 2rem 20%;
+        & .titreCateg {
+            font-size: 2rem;
+        }
+    }
+}
+
+// medium screen
+@media screen and (min-width: 750px) and (max-width: 1250px) {
+    section {
+        margin: 2rem 10%;
+        & .titreCateg {
+            font-size: 1rem;
+        }
+    }
+}
+
+// small screen
+@media screen and (max-width: 750px){
+    section {
+        margin: 2rem 5%;
+        & .titreCateg {
+            font-size: 0.75rem;
+        }
+    }
+}
+
+section {
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 1px 1px 12px #555;
+    & .menu__detail {
+        max-width: 100%;
+        display: block;
+        margin:0 auto;
+    }
+    & .titreCateg {
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-between;
+        & .line {
+            height: 2px;
+            background-color: black;
+            width: 100%;
+            transform: scaleX(0);
+            transform-origin: 0% 50%;
+            transition: transform 400ms;
+        }
+        &--colorFirst {
+            color: #c67412;
+            & .line {
+                height: 2px;
+                background-color: #c67412;
+                width: 100%;
+                transform: scaleX(0);
+                transform-origin: 0% 50%;
+                transition: transform 400ms;
+            }
+        }
+        &--colorSecond {
+            color: #a56799;
+            & .line {
+                height: 2px;
+                background-color:  #a56799;
+                width: 100%;
+                transform: scaleX(0);
+                transform-origin: 0% 50%;
+                transition: transform 400ms;
+            }
+        }
+        &--colorThird {
+            color: #6e4ccc;
+            & .line {
+                height: 2px;
+                background-color: #6e4ccc;
+                width: 100%;
+                transform: scaleX(0);
+                transform-origin: 0% 50%;
+                transition: transform 400ms;
+            }
+        }
+        &>div>div {
+            text-align: left;
+        }
+        &:hover .line{
+            transform: scaleX(1);
+        }
+    }
+}
+
+.menu1 {
+    background-color: $backgrnd-menu1;
+}
+.menu2 {
+    background-color: $backgrnd-menu2;
+}
+.menu3 {
+    background-color: $backgrnd-menu3;
+}
+.menu4 {
+    background-color: $backgrnd-menu4;
+}
