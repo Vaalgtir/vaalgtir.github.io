@@ -1,20 +1,35 @@
 @keyframes waiting_dot {
   from {
     transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    -webkit-transform: translateY(0px);
   }
   to {
     transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
   }
 }
 @keyframes wiggle {
   0% {
     transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
   }
   50% {
     transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
   }
   100% {
     transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
   }
 }
 @media screen and (max-width: 992px) {
@@ -78,9 +93,13 @@ section .menus a {
 }
 section .menus a img {
   transition: all 400ms;
+  -webkit-transition: all 400ms;
 }
 section .menus a img:hover {
   transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
   opacity: 0.25;
 }
 section .prochainement {
@@ -96,12 +115,15 @@ section .prochainement {
 section .prochainement:hover > span.anime__dot {
   display: inline-block;
   animation: waiting_dot 600ms ease-in-out infinite alternate;
+  -webkit-animation: waiting_dot 600ms ease-in-out infinite alternate;
 }
 section .prochainement:hover > span.anime__dot--2 {
   animation-delay: 200ms;
+  -webkit-animation-delay: 200ms;
 }
 section .prochainement:hover > span.anime__dot--3 {
   animation-delay: 400ms;
+  -webkit-animation-delay: 400ms;
 }
 
 footer {
@@ -119,10 +141,12 @@ footer a {
   text-decoration: none;
   color: #fdcb46;
   transition: color 400ms;
+  -webkit-transition: color 400ms;
 }
 footer a:hover {
-  animation: wiggle 200ms 3 alternate;
   text-decoration: none;
+  animation: wiggle 200ms 3 alternate;
+  -webkit-animation: wiggle 200ms 3 alternate;
   color: #F57F17;
 }
 
