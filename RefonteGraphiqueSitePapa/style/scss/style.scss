@@ -104,6 +104,151 @@ $color-txt-orange: #FFCA28;
     }
 }
 
+header {
+    // background image remplacé par background blue en l'attente
+    background-color: #90CAF9;
+    text-align: center;
+    display: grid;
+    color: #616161;
+    & h1 {
+        font-size: 2.5rem;
+        font-weight: 100;
+        color: black;
+        margin: 2rem 0;
+        font-family: 'Montserrat', sans-serif;
+    }
+    & div {
+        padding: 1rem 0;
+    }
+}
+
+section {
+    & .title {
+        color: $color-txt-orange;
+        text-align: center;
+        border-bottom: solid $color-txt-orange 1px;
+        margin: 1rem 10% 2rem 10%;
+        & h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 100;
+        }
+    }
+    & .chevron {
+        padding-top: 1rem;
+    }
+    & .chevron .chevron__line1, .chevron .chevron__line2{
+        background-color: $color-txt-orange;
+    }
+    & .wrapperContent {
+        display: grid;
+        align-items: center;
+        column-gap: 1rem;
+        & img {
+            max-width: 100%;
+        }
+        & div {
+            & h2 {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 100;
+                font-size: 2rem;
+                margin-bottom: 0.5rem;
+            }
+            & p {
+                color: $color-txt-primary;
+                margin: 1rem 0 1rem 1rem;
+                & a {
+                    font-size: 0.95rem;
+                }
+            };
+        }
+    }
+    & .wrapperTestLink {
+        background-color: #90CAF9;
+        display: grid;
+        text-align: center;
+        padding: 2rem 2rem;
+        align-items: center;
+        & p {
+            color: white;
+            font-size: 2rem;
+            font-weight: 500;
+            font-family: 'Montserrat', sans-serif;
+        }
+        & .or {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        & .testButton {
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.footer {
+    color: white;
+    bottom: 0;
+    background-color: #212121;
+    display: grid;
+    padding-top: 2rem;
+    & .containerLegal {
+        & h1 {
+            margin:0 0 1rem 0.75rem;
+            color: white;
+            font-weight: 500;
+            font-size: 2rem;
+        }
+        & .wrapperLink {
+            margin: 1rem 0;
+            display: grid;
+            & a:last-child {
+                grid-row: 2 / 3;
+            }
+            & a {
+                text-decoration: none;
+                color: #E0E0E0;
+                border-bottom: solid 1px #BDBDBD;
+                padding: 0.5rem;
+                transition: all 300ms;
+                &:hover {
+                    text-decoration: none;
+                    color: $orange-primary;
+                }
+            }
+        }
+    }
+    & .containerNousContacter {
+        & h1 {
+            margin:0 0 1rem 0.75rem;
+            font-weight: 500;
+            font-size: 2rem;
+        }
+        & h2 {
+            font-weight: 400;
+            font-size: 1.25rem;
+        }
+        & p {
+            font-size: 1rem;
+            margin: 2rem 0;
+        }
+        & i {
+            margin-right: 0.75rem;
+        }
+        & a {
+            text-decoration: none;
+            color: #E0E0E0;
+            padding: 0.5rem 1rem 1rem 0;
+            transition: all 300ms;
+            &:hover {
+                text-decoration: none;
+                color: $blue-primary;
+            }
+        }
+    }
+}
+
+
 // full and medium screen navbar
 @media screen and (min-width:750px) { 
     .navbar {
@@ -145,6 +290,86 @@ $color-txt-orange: #FFCA28;
         }
     }
     
+    header {
+        padding: 1rem 2rem 1rem 40%;
+        font-size: 1.2rem;
+        grid-template-columns: repeat(4, 1fr);
+        // positionnement
+        & h1 {
+            grid-column: 1/5;
+        }
+        &>div {
+            grid-row: 2/3;
+            grid-column: 2/4;
+            &+div {
+                grid-row: 3/4;
+                grid-column: 1/3;
+                &+div {
+                    grid-row: 4/5;
+                    grid-column: 3/5;
+                }
+            }
+        }
+    }
+    
+    section {
+        & .title h1 {
+            font-size: 3rem;
+        }
+        & .chevron {
+            margin-left: 47%;
+        }
+        & .wrapperContent {
+            row-gap: 6rem;
+            margin: 0 20% 2rem 20%;
+            grid-template-columns: repeat(8, 1fr);
+            // placement des éléments dans la grille
+            & .img__line1 {
+                grid-column: 1/5;
+            }
+            & .content__line1 {
+                grid-column: 5/8;
+            }
+            & .img__line2 {
+                grid-row: 2/3;
+                grid-column: 6/9;
+            }
+            & .content__line2 {
+                grid-column: 2/5;
+            }
+            & .img__line3 {
+                grid-row: 3/4;
+                grid-column: 1/4;
+            }
+            & .content__line3 {
+                grid-column: 5/8;
+            }
+            & .img__line4 {
+                grid-row: 4/5;
+                grid-column: 6/9;
+            }
+            & .content__line4 {
+                grid-column: 2/5;
+            }
+        }
+    
+        .wrapperTestLink {
+            gap: 1rem;
+            grid-template-columns: 3fr 1fr 3fr;
+
+            // positionnement
+            & .testFichier__button {
+                margin: 3rem auto;
+                grid-row: 2/3;
+            }
+            & .testLogiciel__button {
+                margin: 3rem auto;
+                grid-row: 2/3;
+                grid-column: 3/4;
+            }
+        }
+    }
+
     .footer {
         grid-template-columns: repeat(5, 1fr);
         text-align: left;
@@ -165,6 +390,10 @@ $color-txt-orange: #FFCA28;
         & .wrapperLink {
             grid-column: 2 / 3;
         }
+    }
+    
+    .wrapperTestLink {
+        
     }
 }
 
@@ -221,6 +450,40 @@ $color-txt-orange: #FFCA28;
             border-bottom: 2px solid #98b1d4;
         }
     }
+    
+    header {
+        margin-top: 12vh;
+        padding: 1rem 1rem 10rem 1rem;
+        grid-template-columns: 1fr;
+    }
+    
+    section {
+        & .title h1 {
+            font-size: 2rem;
+        }
+        & .chevron {
+            margin-left: 40%;
+        }
+        & .wrapperContent {
+            row-gap: 3rem;
+            margin: 0 20% 2rem 17%;
+            grid-template-columns: 1fr;
+            & .img__line1, .img__line2, .img__line3, .img__line4 {
+                display: none;
+            }
+        }
+    
+        .wrapperTestLink {
+            gap: 1.5rem;
+            grid-template-columns: 1fr;
+            & .testFichier__button {
+                margin: 2rem auto;
+            }
+            & .testLogiciel__button {
+                margin: 2rem auto;
+            }
+        }
+    }
 
     .footer {
         grid-template-columns: 1fr;
@@ -231,214 +494,6 @@ $color-txt-orange: #FFCA28;
         }
         & .containerLegal .wrapperLink {
             justify-content: center;
-        }
-    }
-}
-
-header {
-    // background image remplacé par background blue en l'attente
-    padding: 1rem 2rem 1rem 40%;
-    background-color: #90CAF9;
-    font-size: 1.2rem;
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    color: #616161;
-    & h1 {
-        grid-column: 1/5;
-        font-size: 2.5rem;
-        font-weight: 100;
-        color: black;
-        margin: 2rem 0;
-        font-family: 'Montserrat', sans-serif;
-    }
-    & div {
-        padding: 1rem 0;
-    }
-    &>div {
-        grid-row: 2/3;
-        grid-column: 2/4;
-        &+div {
-            grid-row: 3/4;
-            grid-column: 1/3;
-            &+div {
-                grid-row: 4/5;
-                grid-column: 3/5;
-            }
-        }
-    }
-}
-
-section {
-    & .title {
-        color: $color-txt-orange;
-        text-align: center;
-        border-bottom: solid $color-txt-orange 1px;
-        margin: 1rem 10% 2rem 10%;
-        & h1 {
-            font-size: 3rem;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 100;
-        }
-    }
-    & .chevron {
-        margin-left: 50%;
-        padding-top: 1rem;
-    }
-    & .chevron .chevron__line1, .chevron .chevron__line2{
-        background-color: $color-txt-orange;
-    }
-    & .wrapperContent {
-        margin: 0 20% 2rem 20%;
-        display: grid;
-        align-items: center;
-        row-gap: 6rem;
-        column-gap: 1rem;
-        grid-template-columns: repeat(8, 1fr);
-        & img {
-            max-width: 100%;
-        }
-        & div {
-            & h2 {
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 100;
-                font-size: 2rem;
-                margin-bottom: 0.5rem;
-            }
-            & p {
-                color: $color-txt-primary;
-                margin: 1rem 0 1rem 1rem;
-                & a {
-                    font-size: 0.95rem;
-                }
-            };
-        }
-        // placement des éléments dans la grille
-        & .img__line1 {
-            grid-column: 1/5;
-        }
-        & .content__line1 {
-            grid-column: 5/8;
-        }
-        & .img__line2 {
-            grid-row: 2/3;
-            grid-column: 6/9;
-        }
-        & .content__line2 {
-            grid-column: 2/5;
-        }
-        & .img__line3 {
-            grid-row: 3/4;
-            grid-column: 1/4;
-        }
-        & .content__line3 {
-            grid-column: 5/8;
-        }
-        & .img__line4 {
-            grid-row: 4/5;
-            grid-column: 6/9;
-        }
-        & .content__line4 {
-            grid-column: 2/5;
-        }
-    }
-    & .wrapperTestLink {
-        background-color: #90CAF9;
-        display: grid;
-        grid-template-columns: 3fr 1fr 3fr;
-        gap: 1rem;
-        text-align: center;
-        padding: 2rem 2rem;
-        align-items: center;
-        & p {
-            color: white;
-            font-size: 2rem;
-            font-weight: 500;
-            font-family: 'Montserrat', sans-serif;
-        }
-        & .or {
-            font-size: 1.5rem;
-            font-weight: 600;
-        }
-        & .testButton {
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            font-size: 1.5rem;
-        }
-        // positionnement
-        & .testFichier__button {
-            margin: 3rem auto;
-            grid-row: 2/3;
-        }
-        & .testLogiciel__button {
-            margin: 3rem auto;
-            grid-row: 2/3;
-            grid-column: 3/4;
-        }
-    }
-}
-
-.footer {
-    color: white;
-    bottom: 0;
-    background-color: #212121;
-    display: grid;
-    padding-top: 2rem;
-    & .containerLegal {
-        & h1 {
-            margin:0 0 1rem 0.75rem;
-            color: white;
-            font-weight: 500;
-            font-size: 2rem;
-        }
-        & .wrapperLink {
-            margin: 1rem 0;
-            display: grid;
-            & a:last-child {
-                grid-row: 2 / 3;
-            }
-            & a {
-                text-decoration: none;
-                color: #E0E0E0;
-                border-bottom: solid 1px #BDBDBD;
-                padding: 0.5rem;
-                transition: all 300ms;
-                &:hover {
-                    text-decoration: none;
-                    color: $orange-primary;
-                }
-            }
-        }
-        & .payInsurance {
-            text-align: center;
-        }
-    }
-    & .containerNousContacter {
-        & h1 {
-            margin:0 0 1rem 0.75rem;
-            font-weight: 500;
-            font-size: 2rem;
-        }
-        & h2 {
-            font-weight: 400;
-            font-size: 1.25rem;
-        }
-        & p {
-            font-size: 1rem;
-            margin: 2rem 0;
-        }
-        & i {
-            margin-right: 0.75rem;
-        }
-        & a {
-            text-decoration: none;
-            color: #E0E0E0;
-            padding: 0.5rem 1rem 1rem 0;
-            transition: all 300ms;
-            &:hover {
-                text-decoration: none;
-                color: $blue-primary;
-            }
         }
     }
 }
