@@ -9,9 +9,6 @@ $color-secondary-text: #616161;
 }
 
 @media screen and (max-width: 992px){
-    html {
-        font-size: 250%;
-    }
     .Biography__pdp {
         max-width: 60%;
         margin: 1rem;
@@ -29,9 +26,6 @@ $color-secondary-text: #616161;
 }
 
 @media screen and (min-width: 992px){
-    html {
-        font-size: 100%;
-    }
     .Biography {
         &__button {
             text-align: left;
@@ -141,6 +135,8 @@ $color-secondary-text: #616161;
     &__contenu__lgscreen{
         margin-left: 4rem;
         &--titre {
+            display: flex;
+            align-items: center;
             width: 90%;
             margin-top: 2.5rem;
             padding-left: 1rem;
@@ -153,9 +149,18 @@ $color-secondary-text: #616161;
                 color: $color-primary;
                 padding-right: 2rem;
             }
+            & h1 {
+            font-size: 1.5rem;
+            }
         }
         &--ligne {
             margin-top: 2rem;
+            & h2 {
+                font-size: 1.3rem;
+            }
+            & h3 {
+                font-size: 1.1rem;
+            }
         }
         &--dot {
             text-align: right;
@@ -173,11 +178,6 @@ $color-secondary-text: #616161;
 
     &__contenu__smscreen{
         margin-left: 3rem;
-        // &--flex {
-        //     display: flex;
-        //     justify-content: space-between;
-        //     align-items: center;
-        // }
         &--titre {
             width: 90%;
             margin-top: 2.5rem;
@@ -207,6 +207,15 @@ $color-secondary-text: #616161;
             &--arrow {
                 color: $color-secondary;
                 margin-left: 7rem;
+            }
+            & span {
+                display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+            }
+            & h1 {
+            font-size: 1.5rem;
             }
         }
         &--ligne {
