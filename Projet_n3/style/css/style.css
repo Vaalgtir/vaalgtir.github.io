@@ -42,11 +42,11 @@
     padding: 0.75rem 1rem;
   }
 
-  section .menus {
+  .wrapperMenus .menus {
     margin: 1rem 1rem;
   }
 
-  section .prochainement {
+  .wrapperMenus .prochainement {
     font-size: 2rem;
   }
 }
@@ -56,11 +56,11 @@
     padding: 1rem 1rem;
   }
 
-  section .menus {
+  .wrapperMenus .menus {
     margin: 2rem 25%;
   }
 
-  section .prochainement {
+  .wrapperMenus .prochainement {
     font-size: 2.5rem;
   }
 }
@@ -79,30 +79,30 @@ header .header__logo {
   margin: 1rem 0;
 }
 
-section {
+.wrapperMenus {
   text-align: center;
 }
-section .menus {
+.wrapperMenus .menus {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(2, 1fr);
 }
-section .menus a {
+.wrapperMenus .menus a {
   box-shadow: 1px 1px 12px #555;
   overflow: hidden;
 }
-section .menus a img {
+.wrapperMenus .menus a img {
   transition: all 400ms;
   -webkit-transition: all 400ms;
 }
-section .menus a img:hover {
+.wrapperMenus .menus a img:hover {
   transform: scale(1.5);
   -moz-transform: scale(1.5);
   -o-transform: scale(1.5);
   -webkit-transform: scale(1.5);
   opacity: 0.25;
 }
-section .prochainement {
+.wrapperMenus .prochainement {
   margin: 2rem 0rem;
   padding: 0 1rem;
   display: inline-block;
@@ -112,16 +112,16 @@ section .prochainement {
   background-color: #579c87;
   color: #fdcb46;
 }
-section .prochainement:hover > span.anime__dot {
+.wrapperMenus .prochainement:hover > span.anime__dot {
   display: inline-block;
   animation: waiting_dot 600ms ease-in-out infinite alternate;
   -webkit-animation: waiting_dot 600ms ease-in-out infinite alternate;
 }
-section .prochainement:hover > span.anime__dot--2 {
+.wrapperMenus .prochainement:hover > span.anime__dot--2 {
   animation-delay: 200ms;
   -webkit-animation-delay: 200ms;
 }
-section .prochainement:hover > span.anime__dot--3 {
+.wrapperMenus .prochainement:hover > span.anime__dot--3 {
   animation-delay: 400ms;
   -webkit-animation-delay: 400ms;
 }
