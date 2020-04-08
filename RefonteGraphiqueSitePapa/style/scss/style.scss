@@ -122,7 +122,7 @@ header {
     }
 }
 
-section {
+main {
     & .title {
         color: $color-txt-orange;
         text-align: center;
@@ -219,12 +219,11 @@ section {
             & span {
                 display: flex;
                 align-items: center;
-                height: 2.5rem;
+                height: 8rem;
                 padding: 1rem 0.5rem;
                 border-bottom: solid 1px #BDBDBD;
                 & img {
                     max-height: 100%;
-                    margin-right: 2rem;
                 }
             }
         }
@@ -260,7 +259,7 @@ section {
 }
 
 
-// full screen navbar
+// full screen
 @media screen and (min-width:1200px) { 
     .navbar {
         grid-template-rows: 8.5vh;
@@ -323,7 +322,7 @@ section {
         }
     }
     
-    section {
+    main {
         & .title h1 {
             font-size: 3rem;
         }
@@ -332,7 +331,7 @@ section {
         }
         & .wrapperContent {
             row-gap: 6rem;
-            margin: 0 20% 2rem 20%;
+            margin: 0 20% 4rem 20%;
             grid-template-columns: repeat(8, 1fr);
             // placement des éléments dans la grille
             & .img__line1 {
@@ -393,7 +392,7 @@ section {
     }
 }
 
-// medium screen navbar
+// medium screen
 @media screen and (min-width: 750px) and (max-width:1200px) {
     .navbar {
         grid-template-rows: 8.5vh;
@@ -457,7 +456,7 @@ section {
         }
     }
     
-    section {
+    main {
         & .title h1 {
             font-size: 2rem;
         }
@@ -466,7 +465,7 @@ section {
         }
         & .wrapperContent {
             row-gap: 3rem;
-            margin: 0 20% 2rem 17%;
+            margin: 0 20% 4rem 17%;
             grid-template-columns: 1fr;
             & .img__line1, .img__line2, .img__line3, .img__line4 {
                 display: none;
@@ -497,7 +496,7 @@ section {
     }
 }
 
-// small screen navbar
+// small screen
 @media screen and (max-width:750px) {
     .navbar {
         position: fixed;
@@ -557,7 +556,7 @@ section {
         grid-template-columns: 1fr;
     }
     
-    section {
+    main {
         & .title h1 {
             font-size: 2rem;
         }

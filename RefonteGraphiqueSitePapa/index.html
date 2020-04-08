@@ -9,8 +9,10 @@
     <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
     <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="js/script.js"></script>
 
     <title>Outil CRM Définition : Prospection commerciale et de suivi</title>
@@ -40,7 +42,7 @@
                 </div>
             </div>
             <a href="#" class="navbar__item">L'Offre</a>
-            <span><a href="#" class="testButton">Essayer</a></span>
+            <span><a data-fancybox data-type="iframe" iframe='{"fitToView":false}' data-src="labo/index.html" class="testButton">Essayer</a></span>
         </div>
     </nav>
 
@@ -51,7 +53,7 @@
         <div>Tout en mettant au centre du commerce, les liens humains dans une économie qui se digitalise à outrance.</div>
     </header>
 
-    <section>
+    <main>
         <div class="title">
             <h1>Un Outil facilitant chaque étape du marketting</h1>
             <div class="chevron">
@@ -133,9 +135,9 @@
                     Essayer gratuitement notre logiciel
                 </p>
             </div>
-            <div class="testLogiciel__button"><a href="#" class="testButton">Faire le test</a></div>
+            <div class="testLogiciel__button"><a data-fancybox data-type="iframe" data-src="labo/index.html" class="testButton">Faire le test</a></div>
         </div>
-    </section>
+    </main>
 
     <footer class="footer">
         <div class="containerLegal">
@@ -143,7 +145,7 @@
             <div class="wrapperLink">
                 <a href="#">Mentions Légale</a>
                 <a href="#">CGU</a>
-                <span><img src="image/footer/madeInFrance.jpg" alt="madeInFrance"> madeInFrance</span>
+                <span><img src="image/footer/madeInFrance.jpg" alt="madeInFrance"></span>
             </div>
         </div>
         <div class="containerNousContacter">
@@ -162,5 +164,12 @@
         </div>
     </footer>
 </body>
+<script>
+    $(".testButton").fancybox({
+        iframe : {
+            scrolling: 'no'
+        }
+    })
+</script>
 
 </html>

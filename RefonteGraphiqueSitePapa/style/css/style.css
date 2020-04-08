@@ -114,61 +114,61 @@ header div {
   padding: 1rem 0;
 }
 
-section .title {
+main .title {
   color: #FFCA28;
   text-align: center;
   border-bottom: solid #FFCA28 1px;
   margin: 1rem 10% 2rem 10%;
 }
-section .title h1 {
+main .title h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 100;
 }
-section .chevron {
+main .chevron {
   padding-top: 1rem;
 }
-section .chevron .chevron__line1, section .chevron .chevron__line2 {
+main .chevron .chevron__line1, main .chevron .chevron__line2 {
   background-color: #FFCA28;
 }
-section .wrapperContent {
+main .wrapperContent {
   display: grid;
   align-items: center;
   column-gap: 1rem;
 }
-section .wrapperContent img {
+main .wrapperContent img {
   max-width: 100%;
 }
-section .wrapperContent div h2 {
+main .wrapperContent div h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 100;
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
-section .wrapperContent div p {
+main .wrapperContent div p {
   color: #585858;
   margin: 1rem 0 1rem 1rem;
 }
-section .wrapperContent div p a {
+main .wrapperContent div p a {
   font-size: 0.95rem;
 }
-section .wrapperTestLink {
+main .wrapperTestLink {
   background-color: #90CAF9;
   display: grid;
   text-align: center;
   padding: 2rem 2rem;
   align-items: center;
 }
-section .wrapperTestLink p {
+main .wrapperTestLink p {
   color: white;
   font-size: 2rem;
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
 }
-section .wrapperTestLink .or {
+main .wrapperTestLink .or {
   font-size: 1.5rem;
   font-weight: 600;
 }
-section .wrapperTestLink .testButton {
+main .wrapperTestLink .testButton {
   text-decoration: none;
   padding: 0.5rem 1rem;
   font-size: 1.5rem;
@@ -208,13 +208,12 @@ section .wrapperTestLink .testButton {
 .footer .containerLegal .wrapperLink span {
   display: flex;
   align-items: center;
-  height: 2.5rem;
+  height: 8rem;
   padding: 1rem 0.5rem;
   border-bottom: solid 1px #BDBDBD;
 }
 .footer .containerLegal .wrapperLink span img {
   max-height: 100%;
-  margin-right: 2rem;
 }
 .footer .containerNousContacter h1 {
   margin: 0 0 1rem 0.75rem;
@@ -304,53 +303,53 @@ section .wrapperTestLink .testButton {
     grid-column: 3/5;
   }
 
-  section .title h1 {
+  main .title h1 {
     font-size: 3rem;
   }
-  section .chevron {
+  main .chevron {
     margin-left: 47%;
   }
-  section .wrapperContent {
+  main .wrapperContent {
     row-gap: 6rem;
-    margin: 0 20% 2rem 20%;
+    margin: 0 20% 4rem 20%;
     grid-template-columns: repeat(8, 1fr);
   }
-  section .wrapperContent .img__line1 {
+  main .wrapperContent .img__line1 {
     grid-column: 1/5;
   }
-  section .wrapperContent .content__line1 {
+  main .wrapperContent .content__line1 {
     grid-column: 5/8;
   }
-  section .wrapperContent .img__line2 {
+  main .wrapperContent .img__line2 {
     grid-row: 2/3;
     grid-column: 6/9;
   }
-  section .wrapperContent .content__line2 {
+  main .wrapperContent .content__line2 {
     grid-column: 2/5;
   }
-  section .wrapperContent .img__line3 {
+  main .wrapperContent .img__line3 {
     grid-row: 3/4;
     grid-column: 1/4;
   }
-  section .wrapperContent .content__line3 {
+  main .wrapperContent .content__line3 {
     grid-column: 5/8;
   }
-  section .wrapperContent .img__line4 {
+  main .wrapperContent .img__line4 {
     grid-row: 4/5;
     grid-column: 6/9;
   }
-  section .wrapperContent .content__line4 {
+  main .wrapperContent .content__line4 {
     grid-column: 2/5;
   }
-  section .wrapperTestLink {
+  main .wrapperTestLink {
     gap: 1rem;
     grid-template-columns: 3fr 1fr 3fr;
   }
-  section .wrapperTestLink .testFichier__button {
+  main .wrapperTestLink .testFichier__button {
     margin: 3rem auto;
     grid-row: 2/3;
   }
-  section .wrapperTestLink .testLogiciel__button {
+  main .wrapperTestLink .testLogiciel__button {
     margin: 3rem auto;
     grid-row: 2/3;
     grid-column: 3/4;
@@ -429,28 +428,28 @@ section .wrapperTestLink .testButton {
     grid-column: 3/5;
   }
 
-  section .title h1 {
+  main .title h1 {
     font-size: 2rem;
   }
-  section .chevron {
+  main .chevron {
     margin-left: 47%;
   }
-  section .wrapperContent {
+  main .wrapperContent {
     row-gap: 3rem;
-    margin: 0 20% 2rem 17%;
+    margin: 0 20% 4rem 17%;
     grid-template-columns: 1fr;
   }
-  section .wrapperContent .img__line1, section .wrapperContent .img__line2, section .wrapperContent .img__line3, section .wrapperContent .img__line4 {
+  main .wrapperContent .img__line1, main .wrapperContent .img__line2, main .wrapperContent .img__line3, main .wrapperContent .img__line4 {
     display: none;
   }
-  section .wrapperTestLink {
+  main .wrapperTestLink {
     gap: 1.5rem;
     grid-template-columns: 1fr;
   }
-  section .wrapperTestLink .testFichier__button {
+  main .wrapperTestLink .testFichier__button {
     margin: 2rem auto;
   }
-  section .wrapperTestLink .testLogiciel__button {
+  main .wrapperTestLink .testLogiciel__button {
     margin: 2rem auto;
   }
 
@@ -524,28 +523,28 @@ section .wrapperTestLink .testButton {
     grid-template-columns: 1fr;
   }
 
-  section .title h1 {
+  main .title h1 {
     font-size: 2rem;
   }
-  section .chevron {
+  main .chevron {
     margin-left: 40%;
   }
-  section .wrapperContent {
+  main .wrapperContent {
     row-gap: 3rem;
     margin: 0 20% 2rem 17%;
     grid-template-columns: 1fr;
   }
-  section .wrapperContent .img__line1, section .wrapperContent .img__line2, section .wrapperContent .img__line3, section .wrapperContent .img__line4 {
+  main .wrapperContent .img__line1, main .wrapperContent .img__line2, main .wrapperContent .img__line3, main .wrapperContent .img__line4 {
     display: none;
   }
-  section .wrapperTestLink {
+  main .wrapperTestLink {
     gap: 1.5rem;
     grid-template-columns: 1fr;
   }
-  section .wrapperTestLink .testFichier__button {
+  main .wrapperTestLink .testFichier__button {
     margin: 2rem auto;
   }
-  section .wrapperTestLink .testLogiciel__button {
+  main .wrapperTestLink .testLogiciel__button {
     margin: 2rem auto;
   }
 
