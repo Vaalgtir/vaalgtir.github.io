@@ -223,6 +223,12 @@ $color-secondary-text: #616161;
             &--loisirs {
                 text-align: center;
             }
+            & h2 {
+                font-size: 1.3rem;
+            }
+            & h3 {
+                font-size: 1.1rem;
+            }
         }
         &--dot {
             text-align: right;
