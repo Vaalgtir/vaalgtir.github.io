@@ -5,7 +5,7 @@ $backgrnd-menu4: #fdfffd;
 
 // big screen
 @media screen and (min-width: 1250px) {
-    section {
+    .wrapperMenu {
         margin: 2rem 20%;
         & .titreCateg {
             font-size: 2rem;
@@ -15,7 +15,7 @@ $backgrnd-menu4: #fdfffd;
 
 // medium screen
 @media screen and (min-width: 750px) and (max-width: 1250px) {
-    section {
+    .wrapperMenu {
         margin: 2rem 10%;
         & .titreCateg {
             font-size: 1rem;
@@ -25,7 +25,7 @@ $backgrnd-menu4: #fdfffd;
 
 // small screen
 @media screen and (max-width: 750px){
-    section {
+    .wrapperMenu {
         margin: 2rem 5%;
         & .titreCateg {
             font-size: 0.75rem;
@@ -33,7 +33,7 @@ $backgrnd-menu4: #fdfffd;
     }
 }
 
-section {
+.wrapperMenu {
     text-align: center;
     font-weight: bold;
     box-shadow: 1px 1px 12px #555;

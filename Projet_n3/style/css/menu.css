@@ -1,44 +1,44 @@
 @media screen and (min-width: 1250px) {
-  section {
+  .wrapperMenu {
     margin: 2rem 20%;
   }
-  section .titreCateg {
+  .wrapperMenu .titreCateg {
     font-size: 2rem;
   }
 }
 @media screen and (min-width: 750px) and (max-width: 1250px) {
-  section {
+  .wrapperMenu {
     margin: 2rem 10%;
   }
-  section .titreCateg {
+  .wrapperMenu .titreCateg {
     font-size: 1rem;
   }
 }
 @media screen and (max-width: 750px) {
-  section {
+  .wrapperMenu {
     margin: 2rem 5%;
   }
-  section .titreCateg {
+  .wrapperMenu .titreCateg {
     font-size: 0.75rem;
   }
 }
-section {
+.wrapperMenu {
   text-align: center;
   font-weight: bold;
   box-shadow: 1px 1px 12px #555;
 }
-section .menu__detail {
+.wrapperMenu .menu__detail {
   max-width: 100%;
   display: block;
   margin: 0 auto;
 }
-section .titreCateg {
+.wrapperMenu .titreCateg {
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
 }
-section .titreCateg .line {
+.wrapperMenu .titreCateg .line {
   height: 2px;
   background-color: black;
   width: 100%;
@@ -46,10 +46,10 @@ section .titreCateg .line {
   transform-origin: 0% 50%;
   transition: transform 400ms;
 }
-section .titreCateg--colorFirst {
+.wrapperMenu .titreCateg--colorFirst {
   color: #c67412;
 }
-section .titreCateg--colorFirst .line {
+.wrapperMenu .titreCateg--colorFirst .line {
   height: 2px;
   background-color: #c67412;
   width: 100%;
@@ -57,10 +57,10 @@ section .titreCateg--colorFirst .line {
   transform-origin: 0% 50%;
   transition: transform 400ms;
 }
-section .titreCateg--colorSecond {
+.wrapperMenu .titreCateg--colorSecond {
   color: #a56799;
 }
-section .titreCateg--colorSecond .line {
+.wrapperMenu .titreCateg--colorSecond .line {
   height: 2px;
   background-color: #a56799;
   width: 100%;
@@ -68,10 +68,10 @@ section .titreCateg--colorSecond .line {
   transform-origin: 0% 50%;
   transition: transform 400ms;
 }
-section .titreCateg--colorThird {
+.wrapperMenu .titreCateg--colorThird {
   color: #6e4ccc;
 }
-section .titreCateg--colorThird .line {
+.wrapperMenu .titreCateg--colorThird .line {
   height: 2px;
   background-color: #6e4ccc;
   width: 100%;
@@ -79,10 +79,10 @@ section .titreCateg--colorThird .line {
   transform-origin: 0% 50%;
   transition: transform 400ms;
 }
-section .titreCateg > div > div {
+.wrapperMenu .titreCateg > div > div {
   text-align: left;
 }
-section .titreCateg:hover .line {
+.wrapperMenu .titreCateg:hover .line {
   transform: scaleX(1);
 }
 
