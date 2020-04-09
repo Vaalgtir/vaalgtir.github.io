@@ -1,6 +1,5 @@
 
-import Highway from '@dogstudio/highway';
-import Fade from './transition';
+
     
 $(function() {
     // script for full screen navbar
@@ -15,12 +14,6 @@ $(function() {
                 $(this).find(".dropidown-menu").slideDown("ease-out");
             };
 
-        // for page animation
-        const H = new Highway.Core({
-            transitions: {
-                default: Fade
-            }
-        })
     });
 
         $(".navbar").find(".dropidown-button").hover(function() {
@@ -67,3 +60,13 @@ $(function() {
        }
       });
 });
+
+import Highway from '@dogstudio/highway';
+import Fade from './transition';
+
+// for page animation
+const H = new Highway.Core({
+    transitions: {
+        default: Fade
+    }
+})

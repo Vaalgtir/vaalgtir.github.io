@@ -12184,7 +12184,6 @@ var Fade = /*#__PURE__*/function (_Highway$Transition) {
       }, {
         opacity: '1',
         onComplete: function onComplete() {
-          from.remove();
           done();
         }
       });
@@ -12224,13 +12223,7 @@ $(function () {
         $(this).find(".dropidown-menu").slideDown("ease-out");
       }
 
-      ; // for page animation
-
-      var H = new _highway.default.Core({
-        transitions: {
-          default: _transition.default
-        }
-      });
+      ;
     });
     $(".navbar").find(".dropidown-button").hover(function () {
       $(this).find(".navbar__item").toggleClass("borderBottom");
@@ -12271,6 +12264,12 @@ $(function () {
         $(".containerPopup").fadeOut();
       }
   });
+});
+// for page animation
+var H = new _highway.default.Core({
+  transitions: {
+    default: _transition.default
+  }
 });
 },{"@dogstudio/highway":"node_modules/@dogstudio/highway/build/highway.js","./transition":"js/transition.js"}],"../../../../Users/khun/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
