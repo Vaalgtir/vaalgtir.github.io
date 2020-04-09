@@ -1,4 +1,7 @@
 
+import Highway from '@dogstudio/highway';
+import Fade from './transition';
+    
 $(function() {
     // script for full screen navbar
     if ($(window).width() > 749) {
@@ -11,7 +14,14 @@ $(function() {
                 $(".wrapperDropidown").addClass("opened");
                 $(this).find(".dropidown-menu").slideDown("ease-out");
             };
-        });
+
+        // for page animation
+        const H = new Highway.Core({
+            transitions: {
+                default: Fade
+            }
+        })
+    });
 
         $(".navbar").find(".dropidown-button").hover(function() {
             $(this).find(".navbar__item").toggleClass("borderBottom");
@@ -30,6 +40,15 @@ $(function() {
             $(this).next(".wrapperLink").slideToggle("ease-out");
             $(this).toggleClass("animCross");
         });
+
+        $(".data-router-wrapper").removeAttr("data-router-wrapper");
+        $(".data-router-view").removeAttr("data-router-view");
+
+        // $(".navbar").find(".navbar__item").click(function(){
+        //     console.log("kjqdhuqj");
+        //     $(".navbar").find(".wrapperLink").slideUp("ease-out");
+        //     $(".navbar").find(".wrapperBurger").toggleClass("animCross");
+        // });
     };
 
     // fade in and fade out of the popup

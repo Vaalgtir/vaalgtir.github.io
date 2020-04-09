@@ -1,3 +1,13 @@
+// SECTION FOR DEVELOPPEMENT PAGES
+.nndvpContent{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+// END OF SECTION FOR DEVELOPPEMENT PAGES
+
 $blue-primary: #5990de;
 $orange-primary: #ffa100;
 $bckground-primary: #EEEEEE;
@@ -25,6 +35,7 @@ $color-txt-orange: #FFCA28;
 // end of animations
 
 .testButton {
+    cursor: pointer;
     color: black;
     background-color: $orange-primary;
     border-radius: 2rem;
@@ -38,6 +49,7 @@ $color-txt-orange: #FFCA28;
     }
 }
 .submitButton {
+    cursor: pointer;
     color: black;
     background-color: $orange-primary;
     border-radius: 2rem;
@@ -51,6 +63,7 @@ $color-txt-orange: #FFCA28;
     }
 }
 .mapTestButton {
+    cursor: pointer;
     color: black;
     background-color: $orange-primary;
     border-radius: 2rem;
@@ -234,6 +247,9 @@ main {
             };
         }
     }
+}
+
+.banner {
     & .wrapperTestLink {
         background-color: #90CAF9;
         display: grid;
@@ -439,7 +455,9 @@ main {
                 grid-column: 2/5;
             }
         }
-    
+    }
+
+    .banner {
         .wrapperTestLink {
             gap: 1rem;
             grid-template-columns: 3fr 1fr 3fr;
@@ -548,7 +566,9 @@ main {
                 display: none;
             }
         }
-    
+    }
+
+    .banner {
         .wrapperTestLink {
             gap: 1.5rem;
             grid-template-columns: 1fr;
@@ -648,7 +668,9 @@ main {
                 display: none;
             }
         }
-    
+    }
+
+    .banner {
         .wrapperTestLink {
             gap: 1.5rem;
             grid-template-columns: 1fr;

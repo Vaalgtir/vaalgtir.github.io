@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -9,9 +9,6 @@
     <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-
-    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script src="js/script.js"></script>
 
     <title>Outil CRM Définition : Prospection commerciale et de suivi</title>
 </head>
@@ -42,19 +39,19 @@
         <div class="wrapperLink">
             <div class="wrapperDropidown">
                 <div class="dropidown-button">
-                    <a href="#" class="navbar__item">Le CRM</a>
+                    <a href="nondvp.html" class="navbar__item">Le CRM</a>
                     <ul class="dropidown-menu">
-                        <li><a href="#">Pour quoi faire ?</a></li>
+                        <li><a href="nondvp.html">Pour quoi faire ?</a></li>
                     </ul>
                 </div>
                 <div class="dropidown-button">
-                    <a href="#" class="navbar__item">Le Fichier</a>
+                    <a href="nondvp.html" class="navbar__item">Le Fichier</a>
                     <ul class="dropidown-menu">
-                        <li><a href="#">Pour quoi un ficher ?</a></li>
+                        <li><a href="nondvp.html">Pour quoi un ficher ?</a></li>
                     </ul>
                 </div>
             </div>
-            <a href="#" class="navbar__item">L'Offre</a>
+            <a href="nondvp.html" class="navbar__item">L'Offre</a>
             <span><div class="testButton">Essayer</div></span>
         </div>
     </nav>
@@ -66,72 +63,77 @@
         <div>Tout en mettant au centre du commerce, les liens humains dans une économie qui se digitalise à outrance.</div>
     </header>
 
-    <main>
-        <div class="title">
-            <h1>Un Outil facilitant chaque étape du marketting</h1>
-            <div class="chevron">
-                <div class="chevron__line1"></div>
-                <div class="chevron__line2"></div>
+    <main data-router-wrapper>
+        <section data-router-view="home">
+            <div class="title">
+                <h1>Un Outil facilitant chaque étape du marketting</h1>
+                <div class="chevron">
+                    <div class="chevron__line1"></div>
+                    <div class="chevron__line2"></div>
+                </div>
             </div>
-        </div>
-        <div class="wrapperContent">
-            <img src="image/index__content/generer_une_action_interet__retouche.jpg" alt="Génération d'action - Exemple" class="img__line1">
-            <div class="content__line1">
-                <h2>Trouver des nouveaux clients facilement</h2>
-                <p>
-                    Pour aboutir aux signatures des contrats, suivez simplement chaque contact et chaque opportunité.
-                </p>
-                <p>
-                    Planifiez ainsi les actions à mener. Le moment venu, chaque action apparaît dans votre calendrier Pré-CRM™.
-                </p>
-                <p>
-                    Si nécessaire, exportez votre calendrier Pré-CRM™ vers Outlook®, Goggle calendar®, iCal® ou tout autre logiciel de gestion d'agenda.
-                </p>
-                <p><a href="#">Lire plus</a></p>
-            </div>
+            <div class="wrapperContent">
+                <img src="image/index__content/generer_une_action_interet__retouche.jpg" alt="Génération d'action - Exemple" class="img__line1">
+                <div class="content__line1">
+                    <h2>Trouver des nouveaux clients facilement</h2>
+                    <p>
+                        Pour aboutir aux signatures des contrats, suivez simplement chaque contact et chaque opportunité.
+                    </p>
+                    <p>
+                        Planifiez ainsi les actions à mener. Le moment venu, chaque action apparaît dans votre calendrier Pré-CRM™.
+                    </p>
+                    <p>
+                        Si nécessaire, exportez votre calendrier Pré-CRM™ vers Outlook®, Goggle calendar®, iCal® ou tout autre logiciel de gestion d'agenda.
+                    </p>
+                    <p><a href="nondvp.html">Lire plus</a></p>
+                </div>
 
-            <div class="content__line2">
-                <h2>Restez dans la course</h2>
-                <p>
-                    Gérez vos relance grâce à un outil de contact intuitif, qui garantit une information complète et rapide d'accès.
-                </p>
-                <p>
-                    Un agenda personnel intégré et a porté de main.
-                </p>
-                <p><a href="#">Lire plus</a></p>
-            </div>
-            <img src="image/index__content/calendrier__retouche.jpg" alt="Calendrier - Exemple" class="img__line2">
+                <div class="content__line2">
+                    <h2>Restez dans la course</h2>
+                    <p>
+                        Gérez vos relance grâce à un outil de contact intuitif, qui garantit une information complète et rapide d'accès.
+                    </p>
+                    <p>
+                        Un agenda personnel intégré et a porté de main.
+                    </p>
+                    <p><a href="nondvp.html">Lire plus</a></p>
+                </div>
+                <img src="image/index__content/calendrier__retouche.jpg" alt="Calendrier - Exemple" class="img__line2">
 
-            <img src="image/index__content/transferer_contact__retouche.jpg" alt="Transfere de contact - Exemple" class="img__line3">
-            <div class="content__line3">
-                <h2>Un développement Commercial en équipe</h2>
-                <p>
-                    Garantr la meilleure prise en charge de chaqeu prospect.
-                </p>
-                <p>
-                    Traivaillez en équipe autour d'un prospect pour une plus grande efficacité commerciale.
-                </p>
-                <p>
-                    Partagez des contacts avec vos collègues ou collaborateur;
-                </p>
-                <p><a href="#">Lire plus</a></p>
-            </div>
+                <img src="image/index__content/transferer_contact__retouche.jpg" alt="Transfere de contact - Exemple" class="img__line3">
+                <div class="content__line3">
+                    <h2>Un développement Commercial en équipe</h2>
+                    <p>
+                        Garantr la meilleure prise en charge de chaqeu prospect.
+                    </p>
+                    <p>
+                        Traivaillez en équipe autour d'un prospect pour une plus grande efficacité commerciale.
+                    </p>
+                    <p>
+                        Partagez des contacts avec vos collègues ou collaborateur;
+                    </p>
+                    <p><a href="nondvp.html">Lire plus</a></p>
+                </div>
 
-            <div class="content__line4">
-                <h2>Gérez l'avancement de vos commandes</h2>
-                <p>
-                    Suivi personnalisable de l'avancement des commandes.
-                </p>
-                <p>
-                    Définir les cycles (Temps de développement, Délai de fabrication, Délai d'approvisionnement, Délai d'acheminement, etc.) spécifque à chaque produit.
-                </p>
-                <p>
-                    Gestion de tâches simples, orientée satisfaction client.
-                </p>
-                <p><a href="#">Lire plus</a></p>
+                <div class="content__line4">
+                    <h2>Gérez l'avancement de vos commandes</h2>
+                    <p>
+                        Suivi personnalisable de l'avancement des commandes.
+                    </p>
+                    <p>
+                        Définir les cycles (Temps de développement, Délai de fabrication, Délai d'approvisionnement, Délai d'acheminement, etc.) spécifque à chaque produit.
+                    </p>
+                    <p>
+                        Gestion de tâches simples, orientée satisfaction client.
+                    </p>
+                    <p><a href="nondvp.html">Lire plus</a></p>
+                </div>
+                <img src="image/index__content/suivre_offres_et_commandes__retouche.jpg" alt="Suivis d'offre et de commandes - Exemple" class="img__line4">
             </div>
-            <img src="image/index__content/suivre_offres_et_commandes__retouche.jpg" alt="Suivis d'offre et de commandes - Exemple" class="img__line4">
-        </div>
+        </section>
+    </main>
+
+    <section class="banner">
         <div class="wrapperTestLink">
             <div class="testFichier">
                 <p>
@@ -150,7 +152,7 @@
             </div>
             <div class="testLogiciel__button"><div class="testButton">Faire le test</div></div>
         </div>
-    </main>
+    </section>
 
     <footer class="footer">
         <div class="containerLegal">
@@ -176,6 +178,9 @@
             </p>
         </div>
     </footer>
+
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
