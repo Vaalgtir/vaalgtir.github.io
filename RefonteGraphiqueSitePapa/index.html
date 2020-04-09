@@ -9,16 +9,29 @@
     <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
     <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="js/script.js"></script>
 
     <title>Outil CRM Définition : Prospection commerciale et de suivi</title>
 </head>
 
 <body>
+    <div class="containerPopup">
+        <div class="wrapperPopup">
+            <div class="disclaimer">Vous y êtes presque, enregistrez vous !</div>
+            <div class="wrapperInput">
+                <input type="text" placeholder="Prénom et NOM">
+                <input type="text" placeholder="Fonction">
+                <input type="text" placeholder="Téléphone">
+                <input type="text" placeholder="e-mail">
+                <input type="text" placeholder="Société">
+                <input type="text" placeholder="Numéro SIRET">
+            </div>
+            <div class="submitButton">Demander</div>
+        </div>
+    </div>
+
     <nav class="navbar ">
         <a href="#" class="logo"><img src="image/navbar/logiciel-de-prospection.png" alt="logo"></a>
         <div class="wrapperBurger">
@@ -42,7 +55,7 @@
                 </div>
             </div>
             <a href="#" class="navbar__item">L'Offre</a>
-            <span><a data-fancybox data-type="iframe" iframe='{"fitToView":false}' data-src="labo/index.html" class="testButton">Essayer</a></span>
+            <span><div class="testButton">Essayer</div></span>
         </div>
     </nav>
 
@@ -126,7 +139,7 @@
                     Testez notre fichier de prospect en un simple click
                 </p>
             </div>
-            <div class="testFichier__button"><a href="#" class="testButton">Testez le fichier</a></div>
+            <div class="testFichier__button"><a href="#" class="mapTestButton">Testez le fichier</a></div>
             <div class="or">
                 Ou
             </div>
@@ -135,7 +148,7 @@
                     Essayer gratuitement notre logiciel
                 </p>
             </div>
-            <div class="testLogiciel__button"><a data-fancybox data-type="iframe" data-src="labo/index.html" class="testButton">Faire le test</a></div>
+            <div class="testLogiciel__button"><div class="testButton">Faire le test</div></div>
         </div>
     </main>
 
@@ -164,12 +177,5 @@
         </div>
     </footer>
 </body>
-<script>
-    $(".testButton").fancybox({
-        iframe : {
-            scrolling: 'no'
-        }
-    })
-</script>
 
 </html>

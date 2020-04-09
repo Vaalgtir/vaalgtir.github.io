@@ -37,6 +37,32 @@ $color-txt-orange: #FFCA28;
         border: solid 2px $blue-primary;
     }
 }
+.submitButton {
+    color: black;
+    background-color: $orange-primary;
+    border-radius: 2rem;
+    border: solid 2px $orange-primary;
+    transition: all 500ms;
+    &:hover {
+        text-decoration: none;
+        color: $blue-primary;
+        background-color: white;
+        border: solid 2px $blue-primary;
+    }
+}
+.mapTestButton {
+    color: black;
+    background-color: $orange-primary;
+    border-radius: 2rem;
+    border: solid 2px $orange-primary;
+    transition: all 500ms;
+    &:hover {
+        text-decoration: none;
+        color: $blue-primary;
+        background-color: white;
+        border: solid 2px $blue-primary;
+    }
+}
 .borderBottom {
     border-bottom: 2px solid $blue-primary;
 }
@@ -53,6 +79,52 @@ $color-txt-orange: #FFCA28;
     &__line2 {
         transform-origin: 0% 50%;
         transform: rotate(45deg);
+    }
+}
+
+.containerPopup {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & .wrapperPopup {
+        text-align: center;
+        position: fixed;
+        z-index: 3;
+        width: 35rem;
+        height: 36.5rem;
+        background-color: white;
+        border-radius: 0.5rem;
+        & .disclaimer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 5rem;
+            background-color: $blue-primary;
+            font-size: 1.5rem;
+            color: white;
+            border-radius: 0.5rem 0.5rem 0 0;
+        }
+        & .wrapperInput {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin: 2rem 3rem;
+            & input {
+                width: 94%;
+                height: 2rem;
+                padding-left: 1rem;
+            }
+        }
+        & .submitButton {
+            padding: 0.75vh 2rem;
+            margin: 0.5rem 13rem;
+        }
     }
 }
 
@@ -177,6 +249,11 @@ main {
         & .or {
             font-size: 1.5rem;
             font-weight: 600;
+        }
+        .mapTestButton {
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            font-size: 1.5rem;
         }
         & .testButton {
             text-decoration: none;

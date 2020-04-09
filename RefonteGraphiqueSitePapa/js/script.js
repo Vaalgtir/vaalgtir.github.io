@@ -30,5 +30,21 @@ $(function() {
             $(this).next(".wrapperLink").slideToggle("ease-out");
             $(this).toggleClass("animCross");
         });
-    }
+    };
+
+    // fade in and fade out of the popup
+    $(".containerPopup").hide();
+    $(".testButton").click(function(){
+        $(".containerPopup").fadeIn();
+    });
+
+    const $bckground_popup = $('.wrapperPopup');
+
+    $(document).mouseup(e => {
+        if (!$bckground_popup.is(e.target) // if the target of the click isn't the container...
+        && $bckground_popup.has(e.target).length === 0) // ... nor a descendant of the container
+        {
+            $(".containerPopup").fadeOut();
+       }
+      });
 });
