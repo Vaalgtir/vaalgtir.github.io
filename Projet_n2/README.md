@@ -1,1 +1,0 @@
-# vaalgtir.github.io
