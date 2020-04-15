@@ -572,9 +572,9 @@ main .wrapperContent .dropdownArticle {
   main .title h1 {
     font-size: 2rem;
   }
-  main .wrapperContent {
-    row-gap: 3rem;
-    margin: 0 20% 4rem 17%;
+  main .wrapperContent .line {
+    margin: 0 20% 2rem 17%;
+    padding-top: 4rem;
     grid-template-columns: 1fr;
   }
   main .wrapperContent .img__line1, main .wrapperContent .img__line2, main .wrapperContent .img__line3, main .wrapperContent .img__line4 {
@@ -670,9 +670,9 @@ main .wrapperContent .dropdownArticle {
   main .title h1 {
     font-size: 2rem;
   }
-  main .wrapperContent {
-    row-gap: 3rem;
+  main .wrapperContent .line {
     margin: 0 20% 2rem 17%;
+    padding-top: 4rem;
     grid-template-columns: 1fr;
   }
   main .wrapperContent .img__line1, main .wrapperContent .img__line2, main .wrapperContent .img__line3, main .wrapperContent .img__line4 {
