@@ -12242,12 +12242,6 @@ $(function () {
       $(this).next(".wrapperLink").slideToggle("ease-out");
       $(this).toggleClass("animCross");
     });
-    $(".data-router-wrapper").removeAttr("data-router-wrapper");
-    $(".data-router-view").removeAttr("data-router-view"); // $(".navbar").find(".navbar__item").click(function(){
-    //     console.log("kjqdhuqj");
-    //     $(".navbar").find(".wrapperLink").slideUp("ease-out");
-    //     $(".navbar").find(".wrapperBurger").toggleClass("animCross");
-    // });
   }
 
   ; // fade in and fade out of the popup
@@ -12256,6 +12250,9 @@ $(function () {
   $(".testButton").click(function () {
     $(".containerPopup").fadeIn();
   });
+  $(".containerPopup").find("i").click(function () {
+    $(".containerPopup").fadeOut();
+  });
   var $bckground_popup = $('.wrapperPopup');
   $(document).mouseup(function (e) {
     if (!$bckground_popup.is(e.target) // if the target of the click isn't the container...
@@ -12263,9 +12260,19 @@ $(function () {
       {
         $(".containerPopup").fadeOut();
       }
+  }); // script for the dropdown article
+
+  $(".wrapperContent").find(".dropdownArticleButton").click(function () {
+    $(this).parents(".line").next(".dropdownArticle").stop(true, false).slideToggle();
+  }); // script for automatic target scroll 
+
+  $("main").find(".chevron").click(function () {
+    $("html, body").stop(true, false).animate({
+      scrollTop: $(".title").offset().top
+    }, 800);
   });
-});
-// for page animation
+}); // for page animation
+
 var H = new _highway.default.Core({
   transitions: {
     default: _transition.default
@@ -12299,7 +12306,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55856" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51439" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -236,6 +236,12 @@ main .wrapperContent div p {
 main .wrapperContent div p a {
   font-size: 0.95rem;
 }
+main .wrapperContent .dropdownArticleButton {
+  color: black;
+}
+main .wrapperContent .dropdownArticleButton i {
+  opacity: 0;
+}
 
 .banner .wrapperTestLink {
   background-color: #90CAF9;
