@@ -573,8 +573,8 @@ main .wrapperContent .dropdownArticle {
     font-size: 2rem;
   }
   main .wrapperContent .line {
-    row-gap: 3rem;
-    margin: 0 20% 4rem 17%;
+    margin: 0 20% 2rem 17%;
+    padding-top: 4rem;
     grid-template-columns: 1fr;
   }
   main .wrapperContent .img__line1, main .wrapperContent .img__line2, main .wrapperContent .img__line3, main .wrapperContent .img__line4 {
@@ -671,8 +671,8 @@ main .wrapperContent .dropdownArticle {
     font-size: 2rem;
   }
   main .wrapperContent .line {
-    row-gap: 3rem;
     margin: 0 20% 2rem 17%;
+    padding-top: 4rem;
     grid-template-columns: 1fr;
   }
   main .wrapperContent .img__line1, main .wrapperContent .img__line2, main .wrapperContent .img__line3, main .wrapperContent .img__line4 {
