@@ -572,7 +572,7 @@ main .wrapperContent .dropdownArticle {
   main .title h1 {
     font-size: 2rem;
   }
-  main .wrapperContent {
+  main .wrapperContent .line {
     row-gap: 3rem;
     margin: 0 20% 4rem 17%;
     grid-template-columns: 1fr;
@@ -670,7 +670,7 @@ main .wrapperContent .dropdownArticle {
   main .title h1 {
     font-size: 2rem;
   }
-  main .wrapperContent {
+  main .wrapperContent .line {
     row-gap: 3rem;
     margin: 0 20% 2rem 17%;
     grid-template-columns: 1fr;

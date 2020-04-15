@@ -610,9 +610,11 @@ main {
             font-size: 2rem;
         }
         & .wrapperContent {
-            row-gap: 3rem;
-            margin: 0 20% 4rem 17%;
-            grid-template-columns: 1fr;
+            & .line {
+                row-gap: 3rem;
+                margin: 0 20% 4rem 17%;
+                grid-template-columns: 1fr;
+            }
             & .img__line1, .img__line2, .img__line3, .img__line4 {
                 display: none;
             }
@@ -713,9 +715,11 @@ main {
             font-size: 2rem;
         }
         & .wrapperContent {
-            row-gap: 3rem;
-            margin: 0 20% 2rem 17%;
-            grid-template-columns: 1fr;
+            & .line {
+                row-gap: 3rem;
+                margin: 0 20% 2rem 17%;
+                grid-template-columns: 1fr;
+            }
             & .img__line1, .img__line2, .img__line3, .img__line4 {
                 display: none;
             }
